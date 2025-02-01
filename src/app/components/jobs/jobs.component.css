@@ -1,0 +1,109 @@
+.my-shadow {
+    position: absolute;
+    top: 16%;
+    color: rgba(0, 0, 0, 0.05);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  #services{
+    margin-top: 80px;
+    background-color: #f1f1f1;
+  }
+
+  
+  .services .service-item {
+    text-align: center;
+    border: 1px solid rgba(var(--default-color-rgb), 0.15);
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+
+  
+    
+  
+  .services .service-item .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .services .service-item .icon i {
+    color: var(--contrast-color);
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .service-item .icon::before {
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: rgba(var(--accent-color-rgb), 0.2);
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+  }
+  
+  .services .service-item h3  {
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+
+  
+  .services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  
+  
+  
+  
+  .services .service-item:hover .icon {
+    background: white;
+  }
+  
+  .services .service-item:hover .icon i {
+    color: #5c9f24;
+  }
+  
+ 
+  .services .service-item:hover h3,
+  .services .service-item:hover p ,
+  .services .service-item:hover h2 ,
+  .services .service-item:hover h5
+
+   {
+    color: white;
+
+  }
+
+  .inside-box{
+    background-color: white;
+  }
+  
+  .inside-box:hover{
+    background-color: #5c9f24;
+  }
+
+
+
+
+  

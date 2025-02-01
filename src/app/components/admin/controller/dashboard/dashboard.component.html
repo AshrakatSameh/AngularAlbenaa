@@ -1,0 +1,920 @@
+<section id="contact" class="contact section-bg">
+  <div class="container section-title" data-aos="fade-up">
+    <span class="my-shadow">لوحة التحكم</span>
+    <h2 class="">لوحة التحكم</h2>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-block"
+          (click)="showNewsListHandler()"
+        >
+          <i class="bi bi-list"></i>
+          عرض الاخبار
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-success btn-lg btn-block"
+          (click)="showAddNewsHandler()"
+        >
+          <i class="bi bi-plus-circle-fill"></i>
+          اضافه خبر
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-warning btn-lg btn-block"
+          (click)="showEditNewsHandler()"
+        >
+          <i class="bi bi-pencil-square"></i>
+          تعديل خبر
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-danger btn-lg btn-block"
+          (click)="showDeleteNewsHandler()"
+        >
+          <i class="bi bi-trash"></i>
+          حذف خبر
+        </button>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-block"
+          (click)="showMagazineListHandler()"
+        >
+          <i class="bi bi-list"></i>
+          عرض المجله
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-success btn-lg btn-block"
+          (click)="showMagazineAddHandler()"
+        >
+          <i class="bi bi-plus-circle-fill"></i>
+          اضافه مجله
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-warning btn-lg btn-block"
+          (click)="showMagazineEditHandler()"
+        >
+          <i class="bi bi-pencil-square"></i>
+          تعديل مجله
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-danger btn-lg btn-block"
+          (click)="showMagazineDeleteHandler()"
+        >
+          <i class="bi bi-trash"></i>
+          حذف مجله
+        </button>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-block"
+          (click)="showJobsListHandler()"
+        >
+          <i class="bi bi-list"></i>
+          عرض الوظائف
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-success btn-lg btn-block"
+          (click)="showJobsAddHandler()"
+        >
+          <i class="bi bi-plus-circle-fill"></i>
+          اضافه وظيفه
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-warning btn-lg btn-block"
+          (click)="showJobsEditHandler()"
+        >
+          <i class="bi bi-pencil-square"></i>
+          تعديل وظيفه
+        </button>
+      </div>
+
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-danger btn-lg btn-block"
+          (click)="showJobsDeleteHandler()"
+        >
+          <i class="bi bi-trash"></i>
+          حذف وظيفه
+        </button>
+      </div>
+    </div>
+
+
+
+
+    <div class="row mt-3">
+      <div class="col-md-3 grid-margin stretch-card">
+        <button
+          type="button"
+          class="btn btn-primary btn-lg btn-block"
+          (click)="showMembershipListHandler()"
+        >
+          <i class="bi bi-list"></i>
+          عرض العضويه
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Content blocks of news  -->
+  <div *ngIf="showNewsList">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان الخبر</th>
+                    <th>الخبر</th>
+                    <th>الصورة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div *ngIf="showAddNews">
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-4">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <form
+              action="forms/quote.php"
+              method="post"
+              class="php-email-form"
+              id="scrolled_form"
+            >
+              <h3>اضافه خبر</h3>
+              <div class="row gy-3">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    name="title"
+                    class="form-control"
+                    placeholder="عنوان الخبر"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="news"
+                    placeholder="الخبر "
+                    required
+                  />
+                </div>
+
+                <!-- <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="الصورة"
+                    required
+                  />
+                </div> -->
+
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">الصورة</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+
+            
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your quote request has been sent successfully. Thank you!
+                  </div>
+
+                  <button type="submit">حفظ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div *ngIf="showEditNews">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان الخبر</th>
+                    <th>الخبر</th>
+                    <th>الصورة</th>
+                    <th>تعديل</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-warning"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                      >
+                        تعديل
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td><a href="#" class="btn btn-warning">تعديل</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td><a href="#" class="btn btn-warning">تعديل</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div *ngIf="showDeleteNews">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان الخبر</th>
+                    <th>الخبر</th>
+                    <th>الصورة</th>
+
+                    <th>حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف </a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف </a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Content blocks of magazine  -->
+
+  <div *ngIf="showMagazineList">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان المجله</th>
+                    <th>المجله</th>
+                    <th>الصورة</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div *ngIf="showAddMagazine">
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-4">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <form
+              action="forms/quote.php"
+              method="post"
+              class="php-email-form"
+              id="scrolled_form"
+            >
+              <h3>اضافه مجله</h3>
+              <div class="row gy-3">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    name="title"
+                    class="form-control"
+                    placeholder="عنوان المجله"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="news"
+                    placeholder="المجله "
+                    required
+                  />
+                </div>
+
+                <!-- <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="phone"
+                    placeholder="الصورة"
+                    required
+                  />
+                </div> -->
+
+                <div class="mb-3">
+                  <label for="formFile" class="form-label">الصورة</label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+
+            
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your quote request has been sent successfully. Thank you!
+                  </div>
+
+                  <button type="submit">حفظ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+ <div *ngIf="showEditMagazine">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان المجله</th>
+                    <th>المجله</th>
+                    <th>الصورة</th>
+                    <th>تعديل</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-warning"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                      >
+                        تعديل
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td><a href="#" class="btn btn-warning">تعديل</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td><a href="#" class="btn btn-warning">تعديل</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div *ngIf="showDeleteMagazine">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان المجله</th>
+                    <th>المجله</th>
+                    <th>الصورة</th>
+
+                    <th>حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف </a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف </a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <!-- Membership -->
+
+  <div *ngIf="showMembershipList">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th> الاسم باللغه العربيه</th>
+                    <th> الاسم باللغه الانجليزيه</th>
+                    <th> الرقم القومي</th>
+                    <th> البريد الالكتروني</th>
+                    <th> رقم الهاتف</th>
+                    <th>المحافظة</th>
+                    <th>العنوان</th>
+                    <th>النوع</th>
+                    <th>الاجتماعيه</th>
+                    <th>نوع العضوية</th>
+                    <th>نظام اعضوية</th>
+                    <th>فئه العضوية</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>Html</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+  <!-- Jobs -->
+
+  <div *ngIf="showJobsList">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان الوظيفه</th>
+                    <th>الوصف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div *ngIf="showAddJobsList">
+    <section id="get-started" class="get-started section-bg">
+      <div class="container">
+        <div class="row justify-content-between gy-4">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <form
+              action="forms/quote.php"
+              method="post"
+              class="php-email-form"
+              id="scrolled_form"
+            >
+              <h3>اضافه وظيفه</h3>
+              <div class="row gy-3">
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    name="title"
+                    class="form-control"
+                    placeholder="عنوان الوظيفه"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-12">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="news"
+                    placeholder="الوصف "
+                    required
+                  />
+                </div>
+
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your quote request has been sent successfully. Thank you!
+                  </div>
+
+                  <button type="submit">حفظ</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div *ngIf="showEditJobsList">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان الوظيفه</th>
+                    <th>الوصف</th>
+                    <th>تعديل</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>
+                      <button
+                        type="button"
+                        class="btn btn-warning"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                      >
+                        تعديل
+                      </button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td><a href="#" class="btn btn-warning">تعديل</a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td><a href="#" class="btn btn-warning">تعديل</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+  <div *ngIf="showDeleteJobsList">
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center"></div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-wrap">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>عنوان الوظيفه</th>
+                    <th>الوصف</th>
+
+                    <th>حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف </a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف </a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1001</th>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+
+                    <td><a href="#" class="btn btn-danger">حذف</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+
+</section>
+
+
+

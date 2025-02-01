@@ -1,0 +1,180 @@
+<section id="get-started" class="get-started section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-4">
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+          [formGroup]="myMembershipApplicantForm"
+          (ngSubmit)="onSubmitMembershipApplicant()"
+            class="php-email-form"
+            id="scrolled_form"
+          >
+            <h3>تقديم طلب عضوية</h3>
+            <div class="row gy-3">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="اسم المتقدم باللغه العربيه"
+                  formControlName="fullNameInArabic"
+
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="اسم المتقدم باللغه الانجليزية"
+                  formControlName="fullNameInEnglish"
+
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder=" الرقم القومي"
+                  formControlName="nationalNumber"
+
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="البريد الالكتروني"
+                  formControlName="email"
+
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  placeholder="رقم الهاتف"
+                  formControlName="phone"
+
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="city"
+                  placeholder=" المحافظة"
+                  formControlName="city"
+
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="address"
+                  placeholder=" العنوان"
+                  formControlName="address"
+
+                  required
+                />
+              </div>
+
+              <h6>النوع:</h6>
+              <div class="form-check mt-1">
+                <input class="ms-2"  type="radio" name="gender" id="femaleRadio" formControlName="gender" value="female">
+                <label class="form-check-label" for="femaleRadio">أنثى</label>
+              </div>
+              <div class="form-check mt-1">
+                <input class="ms-2 " type="radio" name="gender" id="maleRadio" formControlName="gender" value="male">
+                <label class="form-check-label" for="maleRadio">ذكر</label>
+              </div>
+
+              <h6>الاجتماعية:</h6>
+              <div class="form-check mt-1">
+                <input class="ms-2 " type="radio" name="status" id="singleRadio" formControlName="status" value="single">
+                <label class="form-check-label" for="singleRadio">أعزب</label>
+              </div>
+              <div class="form-check mt-1">
+                <input class="ms-2 " type="radio" name="status" id="marriedRadio" formControlName="status" value="married">
+                <label class="form-check-label" for="marriedRadio">متزوج</label>
+              </div>
+
+              
+ 
+              <div class="col-md-12">
+                <select class="form-select" aria-label="Default select example" formControlName="memberType"
+                >
+                  <option selected disabled>
+                    نوع العضوية ؟
+                  </option>
+                  <option value="ماسيه">ماسيه</option>
+                  <option value="ذهبي">ذهبي</option>
+                  <option value="فضي">فضي</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <select class="form-select" aria-label="Default select example" formControlName="memberSystem">
+                  <option selected disabled>
+                    نظام العضوية ؟
+                  </option>
+                  <option value="نصف سنويه">نضف سنويه</option>
+                  <option value="سنويه">سنويه</option>
+                  <option value="سنتين">سنتين</option>
+                  <option value="خمس سنوات">خمس سنوات</option>
+
+                </select>
+              </div>
+  
+  
+              <div class="col-md-12">
+                <select class="form-select" aria-label="Default select example" formControlName="memberCategory">
+                  <option selected disabled>
+                  فئةالعضوية ؟
+                  </option>
+                  <option value="فردي">فردي</option>
+                  <option value="عائلي">عائلي (لنظام الخمس سنوات فقط)</option>
+                </select>
+              </div>
+              
+
+  
+              <div class="col-md-12 text-center">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">
+                  Your quote request has been sent successfully. Thank you!
+                </div>
+  
+                <button type="submit">تقديم</button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <div class="col-lg-5" data-aos="fade">
+          <div class="content">
+            <img src="assets/img/apply.webp" class="img-fluid my-img" alt="" />
+          </div>
+        </div>
+        <!-- End Quote Form -->
+      </div>
+    </div>
+  </section>
+  <!-- End Get Started Section -->
+  

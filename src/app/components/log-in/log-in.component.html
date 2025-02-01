@@ -1,0 +1,37 @@
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+    <div class="title">تسجيل الدخول</div>
+    <div class="content">
+      <form action="#" [formGroup]="loginForm">
+        <div class="user-details">
+       
+
+          <div class="input-box">
+            <label class="details">البريد الالكتروني</label>
+            <input type="text" formControlName="email" placeholder="البريد الالكتروني" required>
+          <small *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')" class="text-danger">*Email is required</small>
+          </div>
+         
+          <div class="input-box">
+            <label class="details">كلمة المرور</label>
+            <!-- <input [type]="passtype" placeholder="كلمة المرور" required> -->
+            <input type="password" formControlName="password" placeholder="كلمة المرور" required>
+            <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger">*Password is required</small>
+            <!-- <i (click)="hideShowPass()" class="bi bi-eye-slash"></i> -->
+          </div>
+        
+        </div>
+
+        <div class="form-inlline fr mt-4">
+          <a id="forget" class="font-weight-bold" routerLink="/registration">ليس لدي حساب ؟</a>
+
+        </div>
+        
+    
+
+        <button (click)="OnLogIn()" type="submit" class="button">تسجيل</button>
+      </form>
+    </div>
+  </div>

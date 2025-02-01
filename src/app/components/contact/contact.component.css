@@ -1,0 +1,41 @@
+#contact{
+  margin-top: 80px;
+  background-color: #f1f1f1;
+}
+
+.my-shadow {
+    position: absolute;
+    top: 16%;
+    color: rgba(0, 0, 0, 0.05);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .contact  i {
+    font-size: 48px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #5c9f24;
+  }
+
+  .contact  h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999;
+  }
+
+  .inside-box{
+    background-color: white;
+    height: 200px;
+  }
+
+  .address{
+    padding-right: 30px;
+  }

@@ -1,0 +1,135 @@
+
+<section id="get-started" class="get-started section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-4">
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+          [formGroup]="jobForm"
+          (ngSubmit)="onSubmit()"
+            class="php-email-form"
+                    class="php-email-form"
+            id="scrolled_form"
+          >
+            <h3>تقديم للوظيفة</h3>
+            <div class="row gy-3">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  formControlName="name"
+                  placeholder="الاسم"
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="address"
+                  formControlName="address"
+                  placeholder=" العنوان"
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  formControlName="phoneNumber"
+                  placeholder="رقم الهاتف"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <label for="yearPicker" class="form-label">سنه الميلاد </label>
+                <input type="text" class="form-control" id="yearPicker" placeholder="DD MMM YYYY" appFormatDateInput formControlName="dateOfBirth">
+                <!-- <input type="text" class="form-control" id="yearPicker" placeholder="DD MMM YYYY"  formControlName="dateOfBirth"
+                > -->
+            </div>
+            
+              
+
+              <h6>النوع:</h6>
+              <div class="form-check mt-1">
+                <input class="ms-2 " type="radio" formControlName="gender" value="female" name="أنثي" id="flexRadioDefault1">
+                <label  for="أنثي">
+                  أنثي 
+                </label>
+              </div>
+              <!-- <div class="form-check mt-1">
+                <input class="ms-2" type="radio" formControlName="gender" value="male" name="ذكر" id="flexRadioDefault2" >
+                <label  for="ذكر">
+                 ذكر
+                </label>
+                <input class="ms-2" type="radio" name="gender" id="femaleRadio" formControlName="gender" value="female">
+                <label class="form-check-label" for="femaleRadio">أنثى</label>
+              </div> -->
+              <div class="form-check mt-1">
+                <input class="ms-2" type="radio" name="gender" id="maleRadio" formControlName="gender" value="male">
+                <label class="form-check-label" for="maleRadio">ذكر</label>
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="university"
+                  formControlName="university"
+                  placeholder=" الجامعه"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="faculty"
+                  formControlName="faculty"
+                  placeholder=" الكليه"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <label for="yearPicker" class="form-label">سنه التخرج</label>
+                <!-- <input type="text" class="form-control" id="yearPicker"placeholder="DD MMM YYYY" appFormatDateInput formControlName="graduationYear" -->
+                <input type="text" class="form-control" id="yearPicker"placeholder="DD MMM YYYY"  formControlName="graduationYear"
+                >
+              </div>
+
+              
+            
+
+  
+              <div class="mb-3">
+                <label for="formFile" class="form-label">السيره الذاتية</label>
+
+                <input class="form-control" type="file" (change)="handleFileInput($event)" id="formFile" formControlName="applicantCv">
+
+                <!-- <input class="form-control" type="file" id="formFile"  formControlName="applicantCv"
+                > -->
+              </div>
+  
+            
+              <div class="col-md-12 text-center">
+                <button type="submit">تقديم</button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <div class="col-lg-5" data-aos="fade">
+          <div class="content">
+            <img src="assets/img/apply.webp" class="img-fluid my-img" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

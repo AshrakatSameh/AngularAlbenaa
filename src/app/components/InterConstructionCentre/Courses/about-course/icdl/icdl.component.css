@@ -1,0 +1,43 @@
+#about{
+    margin-top: 80px;
+  }
+  
+  .my-shadow {
+    position: absolute;
+    top: 15%;
+    color: rgba(0, 0, 0, 0.05);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .about .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 1.25rem;
+    margin-left: 6px;
+    color: #5c9f24;
+    
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+ 

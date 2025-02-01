@@ -1,0 +1,52 @@
+<section id="services" class="services section">
+
+
+    <div class="container section-title" data-aos="fade-up">
+      <span class="my-shadow">وظائف</span>
+      <h2>وظائف</h2>
+      <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+    </div>
+
+    <div class="container">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-4 col-md-6 my-box" data-aos="fade-up" data-aos-delay="100" *ngFor="let item of jobs">
+          <div class="service-item position-relative inside-box">
+            <div class="icon">
+              <i class="bi bi-bag"></i>
+            </div>
+            <a href="applyJob" class="stretched-link">
+              <h2>{{item.name}}</h2>
+            </a>
+            <h3>الوصف: {{item.description}}</h3>
+            <h5>الخبرة: {{item.experienceYears}}</h5>
+            <h5>المرتب: {{item.salary}}</h5>
+            <h5>الموقع: {{item.location}}</h5><br>
+            <h5>اضغط للتقديم</h5>
+          </div>
+        </div>
+        
+        <!-- <div class="col-lg-4 col-md-6 my-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item  position-relative inside-box" *ngFor="let item of jobs">
+            <div class="icon">
+              <i class="bi bi-bag"></i>
+            </div>
+            <a href="applyJob" class="stretched-link">
+              <h2>{{item.name}}</h2>
+            </a>
+            <h3>الوصف: {{item.description}}</h3>
+            <h5>الخبرة: {{item.experienceYears}}</h5>
+            <h5>المرتب: {{item.salary}}</h5>
+            <h5>الموقع: {{item.location}}</h5><br>
+            
+            <h5>اضغط للتقديم</h5>
+
+          </div> -->
+        <!-- </div> -->
+
+      </div>
+
+    </div>
+
+  </section>

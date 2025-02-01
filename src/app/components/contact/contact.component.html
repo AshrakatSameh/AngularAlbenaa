@@ -1,0 +1,83 @@
+
+
+
+<section id="contact" class="contact section-bg" >
+
+    <div class="container section-title" data-aos="fade-up">
+      <span class="my-shadow">أتصل بنا</span>
+      <h2 class="">أتصل بنا</h2>
+      <p>شركة البناء الدولية للإستثمار و التنمية شركة مساهمة مصرية #الإستثمار_في_حب_مصر🇪🇬</p>
+    </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-6 my-bg" >
+          <div class="info-item d-flex flex-column justify-content-center align-items-center inside-box address" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt"></i>
+            <h3>العنوان</h3>
+            <p>شارع سعد زغلول ( المحطة ) - بجوار البريد المصري - برج الأندلس ( أ ) - الدور الاول علوي اداري,المنياو مصر.</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6 my-bg">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center inside-box" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone"></i>
+            <h3>بيانات الاتصال</h3>
+            <p>201090963631+</p>
+          </div>
+        </div><!-- End Info Item -->
+
+        <div class="col-lg-3 col-md-6 my-bg">
+          <div class="info-item d-flex flex-column justify-content-center align-items-center inside-box" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope"></i>
+            <h3>البريد الالكتروني</h3>
+            <p>Albenaa.com&#64;gmail.com</p>
+                    </div>
+        </div><!-- End Info Item -->
+
+      </div>
+
+      <div class="row gy-4 mt-1">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28156.428379145927!2d30.790957225683595!3d28.09915799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145b2568599f5181%3A0xe30c54aafde7ac93!2z2YXYsdmD2LIg2KfZhNio2YbYp9ihINin2YTYr9mI2YTZiiDZhNmE2K_Ysdin2LPYp9iqINin2YTZhdiq2LfZiNix2Kkg2YjYp9mE2KrYr9ix2YrYqA!5e0!3m2!1sar!2seg!4v1711597978438!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="col-lg-6">
+          <form (ngSubmit)="submitForm()" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" [(ngModel)]="formData.name" placeholder="الاسم" required="">
+              </div>
+
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" [(ngModel)]="formData.email" placeholder="البريد الالكتروني" required="">
+              </div>
+
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" [(ngModel)]="formData.subject" placeholder="الموضوع" required="">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" [(ngModel)]="formData.description" placeholder="الرسالة" required=""></textarea>
+              </div>
+
+              <div class="col-md-12 text-center">
+                
+
+                <button type="submit">ارسال</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  

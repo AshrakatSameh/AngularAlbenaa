@@ -1,0 +1,40 @@
+<section id="team" class="team section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <span class="my-shadow">المجله</span>
+    <h2>المجله</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100" *ngFor="let item of magazines">
+        <div class="member">
+          <img [src]="item.imageUrl" width="400px" height="400px" class="img-fluid" alt="" >
+          <div class="member-content">
+            <h4>{{item.title}}</h4>
+            <p>
+              {{item.description}}
+            </p>
+          
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+
+
+
+       
+
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->

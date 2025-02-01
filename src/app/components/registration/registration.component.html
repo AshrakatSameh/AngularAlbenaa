@@ -1,0 +1,47 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="container">
+    <div class="title">تسجيل الدخول</div>
+    <div class="content">
+      <form [formGroup]="signUpForm">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details" >الأسم كامل</span>
+            <input type="text" formControlName="fullName" placeholder=" الاسم " required>
+          </div>
+          <div class="input-box">
+            <span class="details" >اسم المستحدم</span>
+            <input type="text" formControlName="username" placeholder=" اسم المستخدم" required>
+          </div>
+          <div class="input-box">
+            <span class="details" >البريد الالكتروني</span>
+            <input type="text" formControlName="email" placeholder="البريد الالكتروني" required>
+          </div>
+          <div class="input-box">
+            <span class="details" >رقم الهاتف</span>
+            <input type="text" formControlName="phone" placeholder="رقم الهاتف" required>
+          </div>
+          <div class="input-box">
+            <span class="details">كلمة المرور</span>
+            <input type="password" formControlName="password" placeholder="كلمة المرور" required>
+            <div *ngIf="signUpForm.get('password')?.touched && signUpForm.get('password')?.invalid" class="error-message">
+              <p *ngIf="signUpForm.get('password')?.errors?.['required']">Password is required.</p>
+              <p *ngIf="signUpForm.get('password')?.errors?.['minlength']">
+                Password must be at least 8 characters long.
+              </p></div>
+          </div>
+          <div class="input-box">
+            <span class="details">تأكيد كلمة المرور</span>
+            <input type="password" formControlName="confirmPassword" placeholder="اعادة كلمة المرور" required>
+          </div>
+        </div>
+       
+
+        <div class="log">
+          <a routerLink="../login">لدي حساب بالفعل</a>
+        </div>
+
+        <button (click)="signUp()" type="submit" class="button">تسجيل</button>
+
+      </form>
+    </div>
+  </div>

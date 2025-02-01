@@ -1,0 +1,112 @@
+
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+  
+      <h1 class="logo"><a routerLink="home">البناء الدولية</a></h1>
+  
+      <!-- [ngClass]="{ 'navbar-mobile': isMobileNavOpen }" -->
+        <nav id="navbar" class="navbar" [ngClass]="{ 'navbar-mobile': isMobileNavOpen }">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" routerLink="home">الرئيسية</a></li> -->
+          <!-- <li><a class="nav-link scrollto" routerLink="applicant">طلب التحاق</a></li> -->
+          
+       
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span> {{'nav.courses' |translate }}</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="aboutCourse"> معلومات الكورسات</a></li>
+              <li><a routerLink="applyCourse"> طلب التحاق بكورس</a></li>
+              <li><a routerLink="enquiry"> استعلام حول كورس</a></li>
+              <li><a routerLink="problemsCourse"> شكاوي و مقترحات</a></li>
+            </ul>
+          </li>
+
+             
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span> التدريب المهني</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="longTerm"> معلومات التدريبات</a></li>
+              <li><a routerLink="applicant"> طلب التحاق بتدريب</a></li>
+              <li><a routerLink="problemIntern"> شكاوي و مقترحات</a></li>
+              <li><a routerLink="result"> النتيجه</a></li>
+
+            </ul>
+          </li>
+
+
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span>شركة البناء</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="building-institute">شركة البناء</a></li>
+              <li><a routerLink="vision">الرؤية</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span>مؤسسه البناء</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a routerLink="ConstFoundation">أنشطة المؤسسة</a></li>
+              <li><a routerLink="enroll">تقديم طلب</a></li>
+            </ul>
+          </li>
+         
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span>المركز الأعلامي</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="dropdown-item" routerLink="news">الاخبار</a></li>
+              <li><a class="dropdown-item" routerLink="magazine">المجله</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span> العضوية</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="dropdown-item" routerLink="membershipApply">تقديم طلب</a></li>
+              <li><a class="dropdown-item" routerLink="guideMem">عن العضويات</a></li>
+            </ul>
+          </li>
+          <li><a routerLink="jobs">وظائف</a></li>
+          
+          <li><a class="nav-link scrollto" routerLink="contact">أتصل بنا</a></li>
+
+          <div *ngIf="isLoggedIn(); then loggedInTemplate else loggedOutTemplate"></div>
+          <ng-template #loggedInTemplate >
+            <div class="navbar-nav py-0" (click)="logout()">
+              <li><a class="getstarted scrollto" routerLink="registration" >تـسجيل الخروج</a></li>
+
+             
+          </div>
+          <div *ngIf="isAdmin()" class="navbar-nav py-0" >
+            <li><a class="getstarted scrollto" routerLink="controll" >لوحة التحكم</a></li>
+
+           
+        </div>
+          </ng-template>
+          <ng-template #loggedOutTemplate >
+            <li><a class="getstarted scrollto" routerLink="login">تـسجيل الـدخول</a></li>
+
+          </ng-template>
+
+          <ul class="nav-menu ">
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">
+                  <i class="fa fa-globe"></i>
+                </button>
+
+                <div class="dropdown-content">
+                  <a  (click)="changeLanguage('ar')">
+                     العربية</a>
+                  <a  (click)="changeLanguage('en')">
+                     English</a>
+                 
+                </div>
+             
+              </div>
+            </li>
+          </ul>
+
+          
+
+        
+          <!-- <li><a class="getstarted scrollto" routerLink="registration">تـسجيل الـدخول</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle" (click)="toggleMobileNav()"></i>
+      </nav>
+  
+    </div>
+  </header>
+  

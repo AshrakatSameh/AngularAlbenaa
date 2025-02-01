@@ -1,0 +1,112 @@
+
+<section id="get-started" class="get-started section-bg">
+    <div class="container">
+      <div class="row justify-content-between gy-4">
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+          [formGroup]="myCourseApplicantForm"
+          (ngSubmit)="onSubmitCourseApplicant()"
+            class="php-email-form"
+            id="scrolled_form"
+          >
+            <h3> استعلام حول كورس </h3>
+            <div class="row gy-3">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="الاسم"
+                  formControlName="name"
+
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="email"
+                  class="form-control"
+                  name="email"
+                  placeholder="البريد الالكتروني"
+                  formControlName="email"
+
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  placeholder="رقم الهاتف"
+                  formControlName="phone"
+
+                  required
+                />
+              </div>
+  
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="المؤهل الدراسي"
+                  formControlName="educationalQualification"
+
+                  required
+                />
+              </div>
+  
+          
+  
+              <div class="col-md-12">
+                <select class="form-select" aria-label="Default select example" formControlName="courseAskAbout">
+                  <option selected disabled>
+                    الكورس او الدبلومه المراد الاستفسار حول/ها ؟
+                  </option>
+                  <option value="كورس المساحة ">كورس المساحة </option>
+                  <option value="كورس 3D-Max"> كورس 3D-Max </option>
+                  <option value="كورس_AuToCAD"> كورس_AuToCAD </option>
+                  <option value="دبلومةالمكتب الفني">دبلومةالمكتب الفني</option>
+                  <option value="دبلومة نظم المعلومات الجغرافية GIS"> دبلومة نظم المعلومات الجغرافية GIS</option>
+                  <option value="كورس ال_ REVIT المعماري">كورس ال_ REVIT المعماري</option>
+                  <option value="كورس الهندسة الكهربائية للمواقع الإنشائية والمباني">
+                    كورس الهندسة الكهربائية للمواقع الإنشائية والمباني
+                  </option>
+                  <option value="دبلومة تصميم الجرافيك">دبلومة تصميم الجرافيك</option>
+                  <option value="دبلومة المساحة + التخطيط المتكاملة ">دبلومة المساحة + التخطيط المتكاملة </option>
+                  <option value="دورة حساب كميات">دورة حساب كميات</option>
+                  <option value="دبلومة إعداد مهندس موقع ">دبلومة إعداد مهندس موقع </option>
+                  <option value="التدريب الصيفي لكليات الهندسة والمساحة">التدريب الصيفي لكليات الهندسة والمساحة</option>
+                  <option value="كورس_html ">كورس_html </option>
+                  <option value="برنامج اسكراتش">برنامج اسكراتش</option>
+            
+
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="4" placeholder="استفسارك" formControlName="question" required=""></textarea>
+              </div>
+  
+            
+              <div class="col-md-12 text-center">
+             
+  
+                <button type="submit">تقديم</button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <div class="col-lg-5" data-aos="fade">
+          <div class="content">
+            <img src="assets/img/apply.webp" class="img-fluid my-img" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

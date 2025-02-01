@@ -1,0 +1,299 @@
+<section id="get-started" class="get-started section-bg">
+  <div class="container">
+    <div class="row justify-content-between gy-4">
+      <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+        <form
+        [formGroup]="myEnrollForm"
+          (ngSubmit)="onSubmitEnroll()"
+          class="php-email-form"
+          id="scrolled_form"
+        >
+          <h3>تقديم طلب</h3>
+          <div class="row gy-3">
+            <div class="col-md-12">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+               formControlName="name"
+                placeholder="اسم المتطوع"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="email"
+                class="form-control"
+                name="email"
+                id="email"
+                formControlName="email"
+                placeholder="البريد الالكتروني"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                class="form-control"
+                name="phoneNumber"
+                id="phoneNumber"
+                formControlName="phoneNumber"
+                placeholder="رقم الهاتف"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                name="qualification"
+                id="qualification"
+                class="form-control"
+                formControlName="qualification"
+                placeholder="المؤهل الدراسي"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                name="currentJob"
+                id="currentJob"
+                class="form-control"
+                formControlName="currentJob"
+                placeholder=" الوظيفة الحالية"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                name="country"
+                id="country"
+                class="form-control"
+                formControlName="country"
+                placeholder="المحافظة"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="form-control"
+                formControlName="city"
+                placeholder="المدينة"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" name="postalCode"
+              class="form-control" id="postalCode" formControlName="postalCode"
+              placeholder=" الرمز البريدي" required />
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                formControlName="volunteeringWorkHaveInterestIn"
+                name="volunteeringWorkHaveInterestIn"
+                id="volunteeringWorkHaveInterestIn"
+              >
+                <option selected disabled>عمل طوعي معين يثير اهتمامك؟</option>
+                <option value="هل هناك افضلية لعمل معين">
+                  هل هناك افضلية لعمل معين
+                </option>
+                <option value="العمل مع منتفع واحد">العمل مع منتفع واحد</option>
+                <option value="لا توجد افضلية">لا توجد افضلية</option>
+                <option value="تقديم الخدمةالي عدة منتفعين">
+                  تقديم الخدمةالي عدة منتفعين
+                </option>
+                <option value="العمل مباشرة مع احد الموظفين كمساعد">
+                  العمل مباشرة مع احد الموظفين كمساعد
+                </option>
+                <option value="التخاطب الجماهيري">التخاطب الجماهيري</option>
+                <option value="المساعدات في الواجبات الادارية العامة">
+                  المساعدات في الواجبات الادارية العامة
+                </option>
+                <option value="تحرير صحيفة او نشرة">تحرير صحيفة او نشرة</option>
+                <option value="غيرها">غيرها</option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="someOneBenefitToWorkWith"
+               formControlName="someOneBenefitToWorkWith"
+                name="someOneBenefitToWorkWith"
+              >
+                <option selected disabled>
+                  هل هناك مستفيد (زبون) او مجموعة مستفيدين تفضل العمل معها ؟
+                </option>
+                <option value="البالغين">البالغين</option>
+                <option value="كبار السن">كبار السن</option>
+                <option value="اليافعين">اليافعين</option>
+                <option value="الاطفال">الاطفال</option>
+                <option value="المعوقين">المعوقين</option>
+                <option value="الذكور">الذكور</option>
+                <option value="الاناث">الاناث</option>
+                <option value="لا مفاضلة">لا مفاضلة</option>
+                <option value="غيرهم">غيرهم</option>
+                <option value="لا ارغب في العمل مع المنتفعين">
+                  لا ارغب في العمل مع المنتفعين
+                </option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                id="groupYouNotBoredof"
+                formControlName="groupYouNotBoredof"
+                name="groupYouNotBoredof"
+              >
+                <option selected disabled>
+                  هل هناك مجموعة لا تشعر بالميل للعمل معها ؟
+                </option>
+                <option value="لا">لا</option>
+                <option value="نعم">نعم</option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                formControlName="volunteeringTime"
+                id="volunteeringTime"
+                name="volunteeringTime"
+              >
+                <option selected disabled>
+                  ما هي الاوقات التي تفضل العمل التطوعي فيها ؟
+                </option>
+                <option value="مرن">مرن</option>
+                <option value="افضل ايام الاسبوع">افضل ايام الاسبوع</option>
+                <option value="افضل العطل الاسبوعية">
+                  افضل العطل الاسبوعية
+                </option>
+                <option value="افضل العمل النهاري">افضل العمل النهاري</option>
+                <option value="افضل العمل المسائي">افضل العمل المسائي</option>
+                <option value="غيرها">غيرها</option>
+                <option value="هناك اوقات لا استطيع العمل بها خلال الاسبوع">
+                  هناك اوقات لا استطيع العمل بها خلال الاسبوع
+                </option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                formControlName="geographicalAdvantageInVolunteerWork"
+                name="geographicalAdvantageInVolunteerWork"
+                id="geographicalAdvantageInVolunteerWork"
+              >
+                <option selected disabled>
+                  هل عندك افضلية جغرافية في العمل التطوعي ؟
+                </option>
+                <option value="no">لا</option>
+                <option value="yes">نعم</option>
+                <option value="maybe">احيانا</option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                formControlName="haveCarForVolunteering"
+                name="haveCarForVolunteering"
+                id="haveCarForVolunteering"
+              >
+                <option selected disabled>
+                  هل لديك سيارة بامكانك استخدامها في العمل التطوعي ؟
+                </option>
+                <option value="لا">لا</option>
+                <option value="نعم">نعم</option>
+                <option value="احيانا">احيانا</option>
+              </select>
+            </div>
+
+            <div class="col-md-12">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                formControlName="knowAboutUs"
+                name="knowAboutUs"
+                id="knowAboutUs"
+              >
+                <option selected disabled>
+                  مصادر معرفتك بنا , كيف سمعت عنا ؟
+                </option>
+                <option value="توصية صديق">توصية صديق</option>
+                <option value="مكتوب تطوعي">مكتوب تطوعي</option>
+                <option value="احد المتطوعين">احد المتطوعين</option>
+                <option value="اعلانات">اعلانات</option>
+                <option value="احد المستفيدين من الجمعية">
+                  احد المستفيدين من الجمعية
+                </option>
+                <option value="غيرها">غيرها</option>
+              </select>
+            </div>
+
+            <h3>اسم اثنين ممكن يعرفونك</h3>
+
+            <div class="col-md-6">
+              <input
+                type="text"
+                name="person1"
+                id="person1"
+                class="form-control"
+               formControlName="presonF"
+                placeholder="الاسم"
+                required
+              />
+            </div>
+
+            <div class="col-md-6">
+              <input
+                type="text"
+                name="person2"
+                id="person2"
+                class="form-control"
+                formControlName="presonS"
+                placeholder="الاسم"
+                required
+              />
+            </div>
+
+            <div class="col-md-12 text-center">
+              
+
+              <button type="submit">تقديم</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-lg-5" data-aos="fade">
+        <div class="content">
+          <img src="assets/img/apply.webp" class="img-fluid my-img" alt="" />
+        </div>
+      </div>
+      <!-- End Quote Form -->
+    </div>
+  </div>
+</section>
+<!-- End Get Started Section -->

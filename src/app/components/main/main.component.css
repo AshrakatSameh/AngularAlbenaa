@@ -1,0 +1,233 @@
+.my-shadow {
+    position: absolute;
+    top: 16%;
+    color: rgba(0, 0, 0, 0.05);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 52px;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  #services{
+    background-color: #f1f1f1;
+  }
+
+  
+  .services .service-item {
+    text-align: center;
+    border: 1px solid rgba(var(--default-color-rgb), 0.15);
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+
+  
+    
+  
+  .services .service-item .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+  }
+  
+  .services .service-item .icon i {
+    color: var(--contrast-color);
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .service-item .icon::before {
+    position: absolute;
+    content: "";
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    background: rgba(var(--accent-color-rgb), 0.2);
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+  }
+  
+  .services .service-item h3 {
+    font-weight: 700;
+    margin: 10px 0 15px 0;
+    font-size: 22px;
+  }
+  
+  .services .service-item p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  
+  
+  
+  
+  .services .service-item:hover .icon {
+    background: white;
+  }
+  
+  .services .service-item:hover .icon i {
+    color: #5c9f24;
+  }
+  
+ 
+  .services .service-item:hover h2,
+  .services .service-item:hover h6 {
+    color: white;
+
+  }
+
+  .inside-box{
+    background-color: white;
+  }
+  
+  .inside-box:hover{
+    background-color: #5c9f24;
+  }
+
+
+
+  .carousel-inner, .carousel-caption {
+    color: white;
+}
+
+/* Centering the carousel-caption text */
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+    align-items: center; /* Centers text horizontally */
+    bottom: 50%; /* Adjust the position vertically */
+    transform: translateY(50%); /* Center text vertically */
+}
+
+/* Optional: Customize the font size and other properties */
+.carousel-caption h5 {
+    font-size: 2rem; /* Adjust as needed */
+    margin-bottom: 0; /* Remove bottom margin for tighter spacing */
+}
+
+.carousel-caption p {
+    font-size: 1rem; /* Adjust as needed */
+}
+
+#hero .carousel-inner .carousel-item {
+  transition-property: opacity;
+  background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#hero .carousel-inner .carousel-item-next,
+#hero .carousel-inner .carousel-item-prev,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+  list-style-type: none;
+  cursor: pointer;
+  background: #fff;
+  overflow: hidden;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+#hero .carousel-indicators li.active {
+  opacity: 1;
+  background: #5c9f24;
+}
+
+#hero .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px 12px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  text-transform: uppercase;
+  border: 2px solid #5c9f24;
+  background: #5c9f24;
+}
+
+#hero .btn-get-started:hover {
+  background: #6ab82a;
+  border-color: #6ab82a;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #hero h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #hero p {
+    width: 60%;
+  }
+
+  #hero .carousel-control-prev,
+  #hero .carousel-control-next {
+    width: 5%;
+  }
+}

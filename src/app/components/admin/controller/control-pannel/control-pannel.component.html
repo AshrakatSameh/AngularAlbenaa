@@ -1,0 +1,2370 @@
+<!-- <ng-container *ngIf="role === 'Admin'"> -->
+<div class="container-fluid mt-100" style="background-color: #f1f1f1">
+  <div class="row">
+    <nav
+      id="sidebarMenu"
+      class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse"
+    >
+      <div class="position-sticky pt-3 sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-home align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              الاخبار
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showNewsListHandler()">عرض</a>
+              <a class="dropdown-item" (click)="showAddNewsHandler()">اضافه</a>
+              <!-- <a class="dropdown-item" (click)="showEditNewsHandler()">تعديل</a> -->
+              <a class="dropdown-item" (click)="showDeleteNewsHandler()">حذف</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file align-text-bottom"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                ></path>
+                <polyline points="13 2 13 9 20 9"></polyline>
+              </svg>
+              المجله
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showMagazineListHandler()"
+                >عرض</a
+              >
+              <a class="dropdown-item" (click)="showMagazineAddHandler()"
+                >اضافه</a
+              >
+              <!-- <a class="dropdown-item" (click)="showMagazineEditHandler()"
+                >تعديل</a
+              > -->
+              <a class="dropdown-item" (click)="showMagazineDeleteHandler()"
+                >حذف</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-shopping-cart align-text-bottom"
+                aria-hidden="true"
+              >
+                <circle cx="9" cy="21" r="1"></circle>
+                <circle cx="20" cy="21" r="1"></circle>
+                <path
+                  d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
+                ></path>
+              </svg>
+              الوظائف
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showJobsListHandler()">عرض</a>
+              <a class="dropdown-item" (click)="showJobsAddHandler()">اضافه</a>
+              <!-- <a class="dropdown-item" (click)="showJobsEditHandler()">تعديل</a> -->
+              <a class="dropdown-item" (click)="showJobsDeleteHandler()">حذف</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              العضويه
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showMembershipListHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-home align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              الكورسات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showCoursesListHandler()"
+                >عرض</a
+              >
+              <a class="dropdown-item" (click)="showAddCoursesHandler()"
+                >اضافه</a
+              >
+              <!-- <a class="dropdown-item" (click)="showEditCoursesHandler()"
+                >تعديل</a
+              > -->
+              <a class="dropdown-item" (click)="showDeleteCoursesHandler()"
+                >حذف</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-home align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+              التدريبات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showInternListHandler()">عرض</a>
+              <a class="dropdown-item" (click)="showAddInternHandler()"
+                >اضافه</a
+              >
+              <!-- <a class="dropdown-item" (click)="showEditInternHandler()"
+                >تعديل</a
+              > -->
+              <a class="dropdown-item" (click)="showDeleteInternHandler()"
+                >حذف</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-bar-chart-2 align-text-bottom"
+                aria-hidden="true"
+              >
+                <line x1="18" y1="20" x2="18" y2="10"></line>
+                <line x1="12" y1="20" x2="12" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="14"></line>
+              </svg>
+              الشكاوي <br />والمقترحات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showAllProblemsHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              طلبات الالتحاق <br />
+              بالمؤسسة
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showEnrollAlbnaaHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              
+              طلبات تقديم<br> الوظائف
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showJobApplicantHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              
+              تقديمات <br>الكورسات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showCourseApplicantHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              
+              تقديمات <br>التدريب المهني
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showTrainingApplicantHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              
+              استعلام <br>الكورسات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showCourseAskInfoHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-users align-text-bottom"
+                aria-hidden="true"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              
+             اضافه <br>النتيجه
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showAddResultHandler()"
+                >إضافة</a
+              >
+              <a class="dropdown-item" (click)="showResultDeleteHandler()">حذف</a>
+
+            </div>
+          </li>
+          
+        </ul>
+
+
+
+        <h6
+          class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase"
+        >
+          <span>الكورسات <br />والتدريبات</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-plus-circle align-text-bottom"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="16"></line>
+              <line x1="8" y1="12" x2="16" y2="12"></line>
+            </svg>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text align-text-bottom"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              شكاوي <br />الكورسات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showCoursesProblemsHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text align-text-bottom"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              شكاوي <br />
+              التدريبات
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showInternProblemsHandler()"
+                >عرض</a
+              >
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-file-text align-text-bottom"
+                aria-hidden="true"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+الشهادات              
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" (click)="showCertificatesHandler()"
+                >عرض</a>
+                <a class="dropdown-item" (click)="showAddCertificatesHandler()"
+                >اضافه</a>
+                <a class="dropdown-item" (click)="showDeleteCertificatesHandler()"
+                >حذف</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 space">
+      <div class="chartjs-size-monitor">
+        <div class="chartjs-size-monitor-expand">
+          <div class=""></div>
+        </div>
+        <div class="chartjs-size-monitor-shrink">
+          <div class=""></div>
+        </div>
+      </div>
+      <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom my-dash"
+      >
+        <h1 class="h2">لوحة التحكم</h1>
+      </div>
+
+      
+      <!-- addResult -->
+
+      <section
+        *ngIf="showAddingResult"
+      id="get-started"
+      class="get-started mt-0"
+    >
+      <h2 style="padding-right: 100px">اضافه نتيجه</h2>
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+        <form
+          class="php-email-form mt-0"
+          id="scrolled_form"
+          [formGroup]="myResultForm"
+          (ngSubmit)="onSubmitResult()"
+        >
+          <div class="row gy-3 mt-0">
+            <div class="col-md-12">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder=" الاسم"
+                formControlName="name"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="number"
+                class="form-control"
+                name="nationalNumber"
+                placeholder="الرقم القومي"
+                formControlName="nationalNumber"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                class="form-control"
+                name="trainingName"
+                placeholder="التدريب "
+                formControlName="trainingName"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="number"
+                class="form-control"
+                name="degree"
+                placeholder=" الدرجة"
+                formControlName="degree"
+                required
+              />
+            </div>
+
+            <div class="col-md-12">
+              <input
+                type="text"
+                class="form-control"
+                name="estimation"
+                placeholder=" التقدير"
+                formControlName="estimation"
+                required
+              />
+            </div>
+
+            <div class="col-md-12 text-center">
+              <button type="submit">حفظ</button>
+            </div>
+
+            </div>
+            </form>
+            </div>
+            </section>
+          
+            <div *ngIf="showDeleteResult" class="table-responsive">
+              <table class="table table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>الرقم التسلسلي</th>
+                    <th>الإسم</th>
+                    <th>الرقم القومي</th>
+                    <th>التدريب</th>
+                    <th>الدرجة</th>
+                    <th>التقدير</th>
+                    <th>حذف</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let item of results">
+                    <th scope="row">{{ item.id }}</th>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.nationalNumber }}</td>
+                    <td>{{ item.trainingName }}</td>
+                    <td>{{ item.degree }}</td>
+                    <td>{{ item.estimation }}</td>
+                    <td>
+                      <button
+                        class="btn btn-danger"
+                        (click)="deleteResultById(item.id)"
+                      >
+                        حذف
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+
+      <!-- استعلام الكورسات  -->
+      <div *ngIf="showCourseAskInfo" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th> الاسم</th>
+              <th>البريد الالكتروني</th>
+              <th>الهاتف</th>
+              <th>المؤهل الدراسي</th>
+              <th>الكورس </th>
+              <th>الاستفسار</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of courseAskInfo">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.phone }}</td>
+              <td>{{ item.educationalQualification }}</td>
+              <td>{{ item.courseAskAbout }}</td>
+              <td>{{ item.question }}</td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- //طلبات الالتحاق بالمؤسسة -->
+
+      <div *ngIf="showEnrollAlbnaa" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>الاسم</th>
+              <th>الهاتف</th>
+              <th>البريد الالكتروني</th>
+              <th>  المؤهل الدراسي</th>
+              <th> الوظيفة الحالية</th>
+              <th> المحافظة</th>
+              <th>المدينة</th>
+              <th>الرمز البريدي</th>
+              <th>الاختيار1</th>
+              <th>الاختيار2</th>
+              <th>الاختيار3</th>
+              <th>الاختيار4</th>
+              <th>الاختيار5</th>
+              <th>الاختيار6</th>
+              <th>الاختيار7</th>
+              <th>الشخص الاول</th>
+              <th>الشخص الثاني</th>
+
+             
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of applyAlbnaa">
+              <th scope="row">{{item.id}}</th>
+              <td>{{item.name}}</td>
+              <td>{{item.phoneNumber}}</td>
+              <td>{{item.email}}</td>
+              <td>{{item.qualification}}</td>
+              <td>{{item.currentJob}}</td>
+              <td>{{item.country}}</td>
+              <td>{{item.city}}</td>
+              <td>{{item.volunteeringWorkHaveInterestIn}}</td>
+              <td>{{item.someOneBenefitToWorkWith}}</td>
+              <td>{{item.groupYouNotBoredof}}</td>
+              <td>{{item.volunteeringTime}}</td>
+              <td>{{item.geographicalAdvantageInVolunteerWork}}</td>
+              <td>{{item.haveCarForVolunteering}}</td>
+              <td>{{item.knowAboutUs}}</td>
+              <td>{{item.presonF}}</td>
+              <td>{{item.presonS}}</td>
+
+
+
+
+            </tr>
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- طلبات التقديم للكورسات  -->
+      <div *ngIf="showCourseApplicant" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th> الاسم</th>
+              <th>البريد الالكتروني</th>
+              <th>الهاتف</th>
+              <th>المؤهل الدراسي</th>
+              <th>الكورس </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of courseApplicant">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.email }}</td>
+              <td>{{ item.phoneNumber }}</td>
+              <td>{{ item.educationalQualification }}</td>
+              <td>{{ item.courseName }}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- طلبات التقديم علي وظائف -->
+      <div *ngIf="showJobApplicant" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th> الاسم</th>
+              <th> تاريخ الميلاد</th>
+              <th>الهاتف</th>
+              <th> العنوان</th>
+              <th>سنه التخرج </th>
+              <th>النوع</th>
+              <th>الجامعه</th>
+              <th>الكليه</th>
+              <th>CV</th>
+
+
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of jobApplicant">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.dateOfBirth }}</td>
+              <td>{{ item.phoneNumber }}</td>
+              <td>{{ item.address }}</td>
+              <td>{{ item.graduationYear }}</td>
+              <td>{{item.gender}}</td>
+              <td>{{item.university}}</td>
+              <td>{{item.faculty}}</td>
+              <td>{{item.applicantCv}}</td>
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <!-- طلبات التقديم للتدريب المهني -->
+      <div *ngIf="showTrainingApplicant" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th> الاسم</th>
+              <th>الهاتف</th>
+              <th>المؤهل الدراسي</th>
+              <th>التدريب </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of trainingApplicant">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.phone }}</td>
+              <td>{{ item.educationalQualification }}</td>
+              <td>{{ item.trainingName }}</td>
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- show News List -->
+
+      <div *ngIf="showNewsList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الخبر</th>
+              <th>الخبر</th>
+              <th>الصورة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of news">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.title }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.imageUrl }}</td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update News -->
+
+      <div *ngIf="showEditNews" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الخبر</th>
+              <th>الخبر</th>
+              <th>الصورة</th>
+              <th>تعديل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of news">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.title }}</td>
+              <td>{{ item.description }}</td>
+              <td>
+                <img [src]="item.imageUrl" alt="News Image" width="100" />
+              </td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  (click)="startUpdateNewsById(item.id)"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- <section *ngIf="showAddNews" id="get-started" class="get-started mt-0">
+        <h2 style="padding-right: 100px">إضافة / تعديل خبر</h2>
+    
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+            <form
+                action="#"
+                class="php-email-form mt-0"
+                [formGroup]="myForm"
+                (ngSubmit)="onSubmitNews()"
+            >
+                <div class="row gy-3 mt-0">
+                    <div class="col-md-12">
+                        <input
+                            type="text"
+                            name="News_title"
+                            class="form-control"
+                            placeholder="عنوان الخبر"
+                            formControlName="title"
+                            required
+                        />
+                    </div>
+                    <div class="col-md-12">
+                        <input
+                            type="text"
+                            class="form-control"
+                            name="description"
+                            placeholder="الخبر"
+                            formControlName="description"
+                            required
+                        />
+                    </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">اختر صورة</label>
+                        <input
+                            class="form-control"
+                            name="imageUrl"
+                            formControlName="imageUrl"
+                            type="file"
+                            id="formFile"
+                        />
+                    </div>
+                    <div class="col-md-12 text-center">
+                        <button type="submit">حفظ</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+      <!-- Delete News -->
+
+      <div *ngIf="showDeleteNews" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الخبر</th>
+              <th>الخبر</th>
+              <th>الصورة</th>
+              <th>حذف</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of news">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.title }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.imageUrl }}</td>
+              <td>
+                <button
+                  class="btn btn-danger"
+                  (click)="deletenewsById(item.id)"
+                >
+                  حذف
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add News  -->
+
+      <section *ngIf="showAddNews" id="get-started" class="get-started mt-0">
+        <h2 style="padding-right: 100px">اضافه خبر</h2>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+            action="#"
+            class="php-email-form mt-0"
+            id="scrolled_form"
+            [formGroup]="myForm"
+            (ngSubmit)="onSubmitNews()"
+          >
+            <div class="row gy-3 mt-0">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="News_title"
+                  class="form-control"
+                  placeholder="عنوان الخبر"
+                  formControlName="title"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="description"
+                  placeholder=" الخبر"
+                  formControlName="description"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">اختر صورة</label>
+                <input
+                  class="form-control"
+                  name="imageUrl"
+                  formControlName="imageUrl"
+                  type="file"
+                  
+                  id="imageUrl"
+                  (change)="handleFileInput($event)"
+                />
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button type="submit">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Show Magazine List -->
+
+      <div *ngIf="showMagazineList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان المجله</th>
+              <th>المجله</th>
+              <th>الصورة</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of magazines">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.title }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.imageUrl }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update Magazine -->
+      <div *ngIf="showEditMagazine" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الخبر</th>
+              <th>الخبر</th>
+              <th>الصورة</th>
+              <th>تعديل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of magazines">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.title }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.imageUrl }}</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Delete Magazine -->
+
+      <div *ngIf="showDeleteMagazine" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الخبر</th>
+              <th>الخبر</th>
+              <th>الصورة</th>
+              <th>حذف</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of magazines">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.title }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.imageUrl }}</td>
+              <td>
+                <button
+                  class="btn btn-danger"
+                  (click)="deleteMagazineById(item.id)"
+                >
+                  حذف
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add Magazine -->
+
+      <section
+        *ngIf="showAddMagazine"
+        id="get-started"
+        class="get-started mt-0"
+      >
+        <h2 style="padding-right: 100px">اضافه مجله</h2>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+            action="#"
+            class="php-email-form mt-0"
+            id="scrolled_form"
+            [formGroup]="myMagazineForm"
+            (ngSubmit)="onSubmitMagazine()"
+          >
+            <div class="row gy-3 mt-0">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="title"
+                  class="form-control"
+                  placeholder="عنوان المجله"
+                  formControlName="title"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="description"
+                  placeholder=" المجله"
+                  formControlName="description"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">اختر صورة</label>
+                <input
+                  class="form-control"
+                  type="file"
+                  name="imageUrl"
+                  formControlName="imageUrl"
+                  id="imageUrl"
+                  (change)="handleFileInput($event)"
+
+                />
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button type="submit">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- </div> -->
+        <!-- </div> -->
+      </section>
+
+      <!-- MembershipList -->
+
+      <div *ngIf="showMembershipList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr >
+              <th>الرقم التسلسلي</th>
+              <th>الاسم باللغه العربيه</th>
+              <th>الاسم باللغه الانجليزيه</th>
+              <th>الرقم القومي</th>
+              <th>البريد الالكتروني</th>
+              <th>رقم الهاتف</th>
+              <th>المحافظة</th>
+              <th>العنوان</th>
+              <th>النوع</th>
+              <th>الاجتماعيه</th>
+              <th>نوع العضوية</th>
+              <th>نظام اعضوية</th>
+              <th>فئه العضوية</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of membershipApplicant">
+              <th scope="row">{{item.id}}</th>
+              <td>{{item.fullNameInArabic}} </td>
+              <td>{{item.fullNameInEnglish}}</td>
+              <td>{{item.nationalNumber}}</td>
+              <td>{{item.email}}</td>
+              <td>{{item.phone}}</td>
+              <td>{{item.city}}</td>
+              <td>{{item.address}} </td>
+              <td>{{item.gender}}</td>
+              <td>{{item.status}}</td>
+              <td>{{item.memberType}}</td>
+              <td>{{item.memberSystem}}</td>
+              <td>{{item.memberCategory}}</td>
+            </tr>
+            
+           
+          </tbody>
+        </table>
+      </div>
+
+      <!-- show Jobs List -->
+
+      <div *ngIf="showJobsList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الوظيفه</th>
+              <th>الوصف</th>
+              <th>سنوات الخبره</th>
+              <th>المرتب</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of jobs">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.experienceYears }}</td>
+              <td>{{ item.salary }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update Jobs -->
+
+      <div *ngIf="showEditJobsList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الوظيفه</th>
+              <th>الوصف</th>
+              <th>تعديل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Delete Jobs -->
+
+      <div *ngIf="showDeleteJobsList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الوظيفه</th>
+              <th>الوصف</th>
+              <th>سنوات الخبره</th>
+              <th>حذف</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of jobs">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.description }}</td>
+              <td>{{ item.experienceYears }}</td>
+              <td>
+                <button class="btn btn-danger" (click)="deleteJobById(item.id)">
+                  حذف
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add Jobs -->
+      <section
+        *ngIf="showAddJobsList"
+        id="get-started"
+        class="get-started mt-0"
+      >
+        <h2 style="padding-right: 100px">اضافه وظيفه</h2>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+            action="#"
+            class="php-email-form mt-0"
+            id="scrolled_form"
+            [formGroup]="myJobForm"
+            (ngSubmit)="onSubmitJob()"
+          >
+            <div class="row gy-3 mt-0">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="عنوان الوظيفه"
+                  formControlName="name"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="salary"
+                  placeholder="المرتب"
+                  formControlName="salary"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="description"
+                  placeholder=" الوصف"
+                  formControlName="description"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="experienceYears"
+                  placeholder=" سنوات الخبره"
+                  formControlName="experienceYears"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="graduationQualifacation"
+                  placeholder=" المؤهل الدراسي"
+                  formControlName="graduationQualifacation"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="location"
+                  placeholder="الموقع "
+                  formControlName="location"
+                  required
+                />
+              </div>
+              <!-- <h6>الوظيفه متاحه:</h6>
+              <div class="form-check mt-1">
+                  <input
+                      class="ms-2"
+                      type="radio"
+                      formControlName="status"
+                      id="flexRadioDefault1"
+                      value="true"
+                  />
+                  <label for="flexRadioDefault1">نعم</label>
+              </div>
+              <div class="form-check mt-1">
+                  <input
+                      class="ms-2"
+                      type="radio"
+                      formControlName="status"
+                      id="flexRadioDefault2"
+                      value="false"
+                  />
+                  <label for="flexRadioDefault2">لا</label>
+              </div> -->
+
+              <div class="col-md-12 text-center">
+                <button type="submit">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- show AllProblems List -->
+      <div *ngIf="showAllProblemsList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الاسم</th>
+              <th>البريد الالكتروني</th>
+              <th>الموضوع</th>
+              <th>الرساله</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of contacts">
+              <th scope="row">{{ item.name }}</th>
+              <td>{{ item.email }}</td>
+              <td>{{ item.subject }}</td>
+              <td>{{ item.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- show Courses Problems List -->
+
+      <div *ngIf="showCoursesProblems" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الاسم</th>
+              <th>البريد الالكتروني</th>
+              <th>الموضوع</th>
+              <th>الرساله</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of coursesProblems">
+              <th scope="row">{{ item.name }}</th>
+              <td>{{ item.email }}</td>
+              <td>{{ item.subject }}</td>
+              <td>{{ item.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- show Intern problems List -->
+
+      <div *ngIf="showInternProblems" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الاسم</th>
+              <th>البريد الالكتروني</th>
+              <th>الموضوع</th>
+              <th>الرساله</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of internProblems">
+              <th scope="row">{{ item.name }}</th>
+              <td>{{ item.email }}</td>
+              <td>{{ item.subject }}</td>
+              <td>{{ item.description }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- show Courses List -->
+
+      <div *ngIf="showCoursesList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الكورس</th>
+              <th>وصف الكورس</th>
+              <th>المبلغ</th>
+              <th>المده</th>
+              <th>المدرب</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cor of courses">
+              <th scope="row">{{ cor.id }}</th>
+              <td>{{ cor.title }}</td>
+              <td>{{ cor.description }}</td>
+              <td>{{ cor.price }}</td>
+              <td>{{ cor.duration }}</td>
+              <td>{{ cor.trainerName }}</td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update Courses -->
+
+      <div *ngIf="showEditCourses" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الكورس</th>
+              <th>المبلغ</th>
+              <th>المده</th>
+              <th>المدرب</th>
+              <th>تعديل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cor of courses">
+              <th scope="row">{{ cor.id }}</th>
+              <td>{{ cor.title }}</td>
+              <td>{{ cor.price }}</td>
+              <td>{{ cor.duration }}</td>
+              <td>{{ cor.trainerName }}</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr> -->
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Delete Courses -->
+      <div *ngIf="showDeleteCourses" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان الكورس</th>
+              <th>المبلغ</th>
+              <th>المده</th>
+              <th>المدرب</th>
+              <th>حذف</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cor of courses">
+              <th scope="row">{{ cor.id }}</th>
+              <td>{{ cor.title }}</td>
+              <td>{{ cor.price }}</td>
+              <td>{{ cor.duration }}</td>
+              <td>{{ cor.trainerName }}</td>
+              <td>
+                <button
+                  class="btn btn-danger"
+                  (click)="deleteCourseById(cor.id)"
+                >
+                  حذف
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add Courses -->
+
+      <section *ngIf="showAddCourses" id="get-started" class="get-started mt-0">
+        <h2 style="padding-right: 100px">اضافه كورس</h2>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form
+            action="#"
+            class="php-email-form mt-0"
+            id="scrolled_form"
+            [formGroup]="myCoursesForm"
+            (ngSubmit)="onSubmitCourse()"
+          >
+            <div class="row gy-3 mt-0">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="Course_Name"
+                  class="form-control"
+                  placeholder="عنوان الكورس"
+                  formControlName="title"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="description"
+                  class="form-control"
+                  placeholder="وصف الكورس"
+                  formControlName="description"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="price"
+                  placeholder=" المبلغ"
+                  formControlName="price"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="period"
+                  placeholder=" المده"
+                  formControlName="duration"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="trainer"
+                  class="form-control"
+                  placeholder=" المدرب"
+                  formControlName="trainerName"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button type="submit">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- </div> -->
+        <!-- </div> -->
+      </section>
+
+      <!-- Show Intern List -->
+
+      <div *ngIf="showInternList" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان التدريب</th>
+              <th>المبلغ</th>
+              <th>المده</th>
+              <th>المدرب</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let T of trainings">
+              <th scope="row">{{ T.id }}</th>
+              <td>{{ T.title }}</td>
+              <td>{{ T.price }}</td>
+              <td>{{ T.duration }}</td>
+              <td>{{ T.trainerName }}</td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update Intern -->
+
+      <div *ngIf="showEditIntern" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان التدريب</th>
+              <th>المبلغ</th>
+              <th>المده</th>
+              <th>المدرب</th>
+              <th>تعديل</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let T of trainings">
+              <th scope="row">{{ T.id }}</th>
+              <td>{{ T.title }}</td>
+              <td>{{ T.price }}</td>
+              <td>{{ T.duration }}</td>
+              <td>{{ T.trainerName }}</td>
+
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr>
+
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+              <td>
+                <button
+                  type="button"
+                  class="btn btn-warning"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                >
+                  تعديل
+                </button>
+              </td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Delete Intern -->
+
+      <div *ngIf="showDeleteIntern" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>عنوان التدريب</th>
+              <th>المبلغ</th>
+              <th>المده</th>
+              <th>المدرب</th>
+              <th>حذف</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let T of trainings">
+              <th scope="row">{{ T.id }}</th>
+              <td>{{ T.title }}</td>
+              <td>{{ T.price }}</td>
+              <td>{{ T.duration }}</td>
+              <td>{{ T.trainerName }}</td>
+              <td><a href="#" class="btn btn-danger">حذف </a></td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+              <td><a href="#" class="btn btn-danger">حذف </a></td>
+            </tr> -->
+            <!-- <tr>
+              <th scope="row">1001</th>
+              <td>Mark Otto</td>
+              <td>Japan</td>
+              <td>Japan</td>
+              <td>Html</td>
+              <td><a href="#" class="btn btn-danger">حذف </a></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Add Intern -->
+
+      <section *ngIf="showAddIntern" id="get-started" class="get-started mt-0">
+        <h2 style="padding-right: 100px">اضافه تدريب</h2>
+
+        <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+          <form class="php-email-form mt-0" id="scrolled_form">
+            <div class="row gy-3 mt-0">
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="Intern_Title"
+                  class="form-control"
+                  placeholder="عنوان التدريب"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="price"
+                  placeholder=" المبلغ"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="period"
+                  placeholder=" المده"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12">
+                <input
+                  type="text"
+                  name="trainer"
+                  class="form-control"
+                  placeholder=" المدرب"
+                  required
+                />
+              </div>
+
+              <div class="col-md-12 text-center">
+                <button type="submit">حفظ</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- show Certificates -->
+
+      <div class="mb-3" *ngIf="showCertificates">
+        <label for="filterCategory" class="form-label">اختر الفئة</label>
+        <select
+          id="filterCategory"
+          class="form-control"
+          style="width:25%"
+          [(ngModel)]="selectedCategory"
+          (change)="filterCertificates()"
+        >
+        <option value ="" selected disabled>اختر الفئه</option>
+          <option value="" >عرض الكل</option>
+          <option value="كورسات">كورسات</option>
+          <option value="تدريب المهني">تدريب المهني</option>
+        </select>
+      </div>
+
+      <div *ngIf="showCertificates" class="table-responsive">
+        <table class="table table-striped table-sm">
+          <thead>
+            <tr>
+              <th>الرقم التسلسلي</th>
+              <th>الإسم</th>
+              <th>الرقم القومي</th>
+              <th>الفئه</th>
+              <th>التقدير</th>
+              <th>تاريخ البدايه</th>
+              <th>تاريخ الانتهاء</th>
+              <th>الشهاده</th>
+        <th>صورة الطالب</th>
+            
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of filteredCertificates">
+              <th scope="row">{{ item.id }}</th>
+              <td>{{ item.name }}</td>
+              <td>{{ item.nationalId }}</td>
+              <td>{{ item.category }}</td>
+              <td>{{ item.rate }}</td>
+              <td>{{ item.startDate | date: 'yyyy-MM-dd'}}</td>
+              <td>{{ item.endDate | date: 'yyyy-MM-dd'}}</td>
+              <td>
+                <img
+                  *ngIf="item.certificateUrl"
+                  [src]="item.certificateUrl"
+                  alt="Certificate"
+                  class="img-thumbnail"
+                  style="width: 100px; height: 60px; object-fit: cover;"
+                />
+              </td>
+              <!-- Display student image -->
+              <td>
+                <img
+                  *ngIf="item.studentImgUrl"
+                  [src]="item.studentImgUrl"
+                  alt="Student"
+                  class="img-thumbnail"
+                  style="width: 100px; height: 60px; object-fit: cover;"
+                />
+              </td>
+           
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+         <!-- show Delete Certificates -->
+
+         <div class="mb-3" *ngIf="ShowDeleteCertificates">
+          <label for="filterCategory" class="form-label">اختر الفئة</label>
+          <select
+            id="filterCategory"
+            class="form-control"
+            style="width:25%"
+            [(ngModel)]="selectedCategory"
+            (change)="filterCertificates()"
+          >
+            <option value="" selected>عرض الكل</option>
+            <option value="كورسات">كورسات</option>
+            <option value="تدريب المهني">تدريب المهني</option>
+          </select>
+        </div>
+
+         <div *ngIf="ShowDeleteCertificates" class="table-responsive">
+
+          <table class="table table-striped table-sm">
+            <thead>
+              <tr>
+                <th>الرقم التسلسلي</th>
+                <th>الإسم</th>
+                <th>الرقم القومي</th>
+                <th>الفئه</th>
+                <th>التقدير</th>
+                <th>تاريخ البدايه</th>
+                <th>تاريخ الانتهاء</th>
+                <th>الشهاده</th>
+          <th>صورة الطالب</th>
+          <th>حذف</th>
+
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of filteredCertificates">
+                <th scope="row">{{ item.id }}</th>
+                <td>{{ item.name }}</td>
+                <td>{{ item.nationalId }}</td>
+                <td>{{ item.category }}</td>
+                <td>{{ item.rate }}</td>
+                <td>{{ item.startDate | date: 'yyyy-MM-dd'}}</td>
+                <td>{{ item.endDate | date: 'yyyy-MM-dd'}}</td>
+                <td>
+                  <img
+                    *ngIf="item.certificateUrl"
+                    [src]="item.certificateUrl"
+                    alt="Certificate"
+                    class="img-thumbnail"
+                    style="width: 100px; height: 60px; object-fit: cover;"
+                  />
+                </td>
+                <!-- Display student image -->
+                <td>
+                  <img
+                    *ngIf="item.studentImgUrl"
+                    [src]="item.studentImgUrl"
+                    alt="Student"
+                    class="img-thumbnail"
+                    style="width: 100px; height: 60px; object-fit: cover;"
+                  />
+                </td>
+                <td>
+                  <button
+                    class="btn btn-danger"
+                    (click)="deleteCertificateById(item.id)"
+                  >
+                    حذف
+                  </button>
+                </td>
+             
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+            <!-- Add Certificates -->
+
+            <section *ngIf="showAddCertificates" id="get-started" class="get-started mt-0">
+              <h2 style="padding-right: 100px">اضافه شهاده</h2>
+      
+              <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+                <form class="php-email-form mt-0" id="scrolled_form"  [formGroup]="MyCertificateForm"
+                (ngSubmit)="onSubmitCertificates()">
+                  <div class="row gy-3 mt-0">
+                    <div class="col-md-12">
+                      <input
+                        type="text"
+                        name="Intern_Title"
+                        class="form-control"
+                        placeholder="اسم الطالب"
+                        formControlName="name"
+
+                        required
+                      />
+                    </div>
+      
+                    <div class="col-md-12">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        placeholder=" الرقم التسلسلي"
+                        formControlName="nationalId"
+
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-12">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        placeholder="التقدير"
+                        formControlName="rate"
+
+                        required
+                      />
+                    </div>
+      
+                    <!-- <div class="col-md-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="period"
+                        placeholder=" كورسات / تدريب طويل المدي"
+                        formControlName="category"
+
+                        required
+                      />
+                    </div> -->
+
+                    <div class="col-md-12">
+                      <select
+                        class="form-control"
+                        name="period"
+                        formControlName="category"
+                        required
+                      >
+                        <option value="" disabled selected>اختر الفئه</option>
+                        <option value="كورسات">كورسات</option>
+                        <option value="تدريب المهني">تدريب المهني</option>
+                      </select>
+                    </div>
+                    
+      
+                    <div class="col-md-12">
+                      <input
+                        type="date"
+                        name="trainer"
+                        class="form-control"
+                        placeholder=" تاريخ البدايه"
+                        formControlName="startDate"
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-12">
+                      <input
+                        type="date"
+                        name="trainer"
+                        class="form-control"
+                        placeholder=" تاريخ الانتهاء"
+                        formControlName="endDate"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="certificateFile" class="form-label">اختر الشهاده</label>
+                      <input
+                        class="form-control"
+                        type="file"
+                        id="certificateFile"
+                        (change)="handleCertificateFile($event)"
+                      />
+                    </div>
+            
+                    <div class="mb-3">
+                      <label for="studentImageFile" class="form-label">اختر صورة الطالب</label>
+                      <input
+                        class="form-control"
+                        type="file"
+                        id="studentImageFile"
+                        (change)="handleStudentImageFile($event)"
+                      />
+                    </div>
+      
+                    <div class="col-md-12 text-center">
+                      <button type="submit">حفظ</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </section>
+    </main>
+  </div>
+</div>

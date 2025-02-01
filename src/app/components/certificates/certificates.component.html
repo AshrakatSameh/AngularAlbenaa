@@ -1,0 +1,30 @@
+<form class="d-flex container2" role="search" (submit)="searchByNationalId(); $event.preventDefault()">
+  <input
+    [(ngModel)]="nationalId"
+    name="nationalId"
+    class="form-control ms-3"
+    type="search"
+    placeholder="Search by National ID"
+    aria-label="Search"
+  />
+  <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+<div class="container" *ngFor="let item of filteredCertificates">
+  <div class="logo" [ngStyle]="{'background-image': 'url(' + (item.studentImgUrl || 'https://res.cloudinary.com/saify/image/upload/v1539009756/icon.jpg') + ')'}"
+  ></div>
+    <h1> {{item.name}}  </h1>
+    <h3> {{item.category}} / التقدير:{{item.rate}}   </h3>
+    <h6> {{item.startDate | date: 'yyyy-MM-dd' }} : {{item.endDate | date: 'yyyy-MM-dd'}} </h6>
+    <div class="bio">
+       <img [src]="item.certificateUrl" width="200px" height="150px">
+    </div>
+    <span class="social">
+      <div class="download-certificate" >
+        <p>تحميل الشهادة</p>
+        <i class="bi bi-download" (click)="downloadCertificate(item.certificateUrl)" download></i>
+      </div>
+      </span>
+
+  </div>
+  
