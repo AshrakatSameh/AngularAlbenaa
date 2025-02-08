@@ -13,10 +13,10 @@
        
           <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span> {{'nav.courses' |translate }}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a routerLink="aboutCourse"> معلومات الكورسات</a></li>
-              <li><a routerLink="applyCourse"> طلب التحاق بكورس</a></li>
-              <li><a routerLink="enquiry"> استعلام حول كورس</a></li>
-              <li><a routerLink="problemsCourse"> شكاوي و مقترحات</a></li>
+              <li><a routerLink="aboutCourse">{{'aboutCourses.dropDown.first' |translate}}</a></li>
+              <li><a routerLink="applyCourse">{{'aboutCourses.dropDown.sec' |translate}}</a></li>
+              <li><a routerLink="enquiry">{{'aboutCourses.dropDown.third' |translate}}</a></li>
+              <li><a routerLink="problemsCourse">{{'aboutCourses.dropDown.fourth' |translate}}</a></li>
             </ul>
           </li>
 
@@ -60,7 +60,7 @@
           </li>
           <li><a routerLink="jobs">وظائف</a></li>
           
-          <li><a class="nav-link scrollto" routerLink="contact">أتصل بنا</a></li>
+          <li><a class="nav-link scrollto" routerLink="contact"> {{'nav.contact' |translate}}</a></li>
 
           <div *ngIf="isLoggedIn(); then loggedInTemplate else loggedOutTemplate"></div>
           <ng-template #loggedInTemplate >

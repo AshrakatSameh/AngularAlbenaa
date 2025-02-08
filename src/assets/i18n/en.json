@@ -1,7 +1,121 @@
 {
-    "nav":{
-        "courses":"Courses"
-    }
+  "nav": {
+    "courses": "Courses",
+    "contact":"Contact Us"
+  },
+  "aboutCourses": {
+    "title": "About Courses",
+    "course1": "3D Max Course",
+    "course2": "Surveying Course",
+    "course3": "AuToCAD Course",
+    "course4": "Technical Office Diploma",
+    "course5": "Geographic Information Systems (GIS) Diploma",
+    "course6": "Architectural Revit Course",
+    "course7": "Electrical Engineering Course for Construction Sites and Buildings",
+    "course8": "Graphic Design Diploma",
+    "course9": "Surveying and Integrated Planning Diploma",
+    "course10": "Quantity Surveying Course",
+    "course11": "Site Engineer Preparation Diploma",
+    "course12": "Summer Training for Engineering and Surveying Faculties",
+    "course13": "HTML Course",
+    "course14": "Scratch Program",
+    "course15": "ICDL",
+    "course16": "First Aid Course",
+    "applyCourse": {
+      "title": "Course Reservation Submission",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "Qualification": "Academic Qualification",
+      "selection": "Which course or diploma would you like to reserve?",
+      "submit": "Submit"
+    },
+    "enquiry": {
+      "title": "Inquiry About a Course",
+      "selection": "Which course or diploma would you like to inquire about?",
+      "question": "Your Inquiry"
+    },
+    "problems": {
+      "title": "Complaints and Suggestions",
+      "address": "Address",
+      "addressDetails": "Saad Zaghloul Street (Station) - Next to the Egyptian Post - Andalus Tower (A) - First Floor, Administrative, Minya, Egypt.",
+      "detials": "Contact Information",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    },
+    "dropDown":{
+        "first":"Course Information",
+        "sec":"Course Enrollment Request",
+        "third":"Inquiry About a Course",
+        "fourth":"Complaints and Suggestions"
+    }},
+    "contact":{
+      "title":"Contact Us",
+      "description":"International Construction Investment and Development Company, an Egyptian Joint Stock Company #Investment_in_Love_for_Egypt 🇪🇬"
+  
+    },
+  
+    "firstAidCourse":{
+      "title":"You will learn how to use surveying instruments like the level and total station, and you will go for practical training to work with the instruments yourself.",
+      "subtitle":"Theoretical lectures",
+      "title1":"Fractures and splints",
+      "title2":"Dislocations",
+      "title3":"Burns and frostbite",
+      "title4":"Wounds and internal bleeding",
+      "title5":"Food poisoning and gas poisoning",
+      "title6":"Overdose poisoning",
+      "title7":"Fainting and recovery position",
+      "title8":"Heart attack",
+      "subtitle2":"Practical training",
+      "title9":"Cardiopulmonary Resuscitation (CPR)",
+      "title10":"Measuring blood pressure, pulse, respiration, and temperature",
+      "title11":"Intramuscular and intravenous injections",
+      "title12":"Allergy test",
+      "title13":"How to collect samples"
+    },
+    "ICDL":{
+      "title":"In construction, you train and learn from experts and professionals with many years of experience, truly preparing for the job market—not just taking a course and that's it.",
+      "title1":"You will learn how to choose your device.",
+      "title2":"We will learn how to work with Windows",
+      "title3":"We will learn how to manage files and the practical way to organize them.",
+      "title4":"We will learn how to compress and decompress files and set a password.",
+      "title5":"We will learn how to install and uninstall programs.",
+      "title6":"We will learn the difference between the 64-bit version and the 32-bit (or 86) version",
+      "title7":"We will learn how to retrieve hidden files from a USB flash drive.",
+      "subtitle":"Inshallah, we will learn a lot during the course, which will be beneficial whether you need to create a presentation for yourself or work with formulas and large numbers. We will also cover infographics, which are extremely useful and can be applied in many areas. The topics mentioned are just examples—we will be learning much more throughout the course.If you're looking to build a CV for a course that includes all 7 modules (Word, Excel, PowerPoint, Access, IT, Windows, and Internet), this course will cover everything. Each program will be explained in detail, and you will practice and apply everything you learn.We will start with Microsoft Word and go through each program step by step.",
+      "subtitle2":"You will learn the basic menus File - Home - Insert - Design - Layout - Review Power Point program You will learn how to make a distinctive presentation SmartArt - Transition - Animation - Slide Show Excel program You will learn how to format tables and charts Styles Tables - Charts Link - Sheet Options Access program You will learn how to create a database with tables and codes, enter data, modify it, and also delete data. Create table in design view - Create table in sql code - Insert into data - Update date - Delete data",
+      "subtitle3":"Course duration: one month",
+      "subtitle4":"Trainer Engineer: Rofida"
+    },
+    "scratch":{
+  "title1":"Many parents now want to see their children excel and no longer want to instill the idea that they must become doctors or engineers, and that anything else means failure or lack of intelligence. However, this mindset has changed. Some parents now prefer to see their children stand out from the rest or pursue what they truly love, which will ultimately make them excel in it.",
+  "title2":"Nowadays, children are highly engaged with technology, especially video games. So why not open the door for them to study what they are passionate about? That’s why we will teach them programming through Scratch, a specialized program designed to introduce children to coding.",
+      "subtitle":"Advantages of Scratch",
+      "p1":"Supports Arabic and English.",
+      "p2":"Teaching children multiple programming languages is important for them.",
+      "p3":"Providing a unique environment of games and graphic stories for children.",
+      "p4":"Developing children's creativity and enhancing their various skills.",
+      "p5":"The Scratch program is suitable for all age groups who use it.",
+      "p6":"It supports multiple languages, with Arabic being one of the most important.",
+      "p7":" It provides a large amount of visual and audio content for users free of charge.",
+      "p8":"Reducing the difficulties presented by programming languages.",
+      "p9":"Early and simplified learning of various programming languages.",
+      "subtitle2":"Projects and Application Levels of the Scratch Program",
+      "p10":"Level 1: Controlling the Movement of Objects",
+      "p11":"Level 2: Changing the Appearance of Objects.",
+      "p12":"Level 3: Creating an Interactive Game.",
+      "p13":"Level 4: Creating a Dialogue Between Two Characters.",
+      "p14":"Course Duration: 8 lectures, twice a week.",
+      "p15":"Trainer Engineer: Rofida"
+  },
+  "summer":{
+      "title":"A great opportunity for engineering and surveying students. The Training Administration announces the opening of applications for the summer training program for students of Engineering Colleges, the Faculty of Arts (Surveying Department), and governmental and private engineering and surveying institutes at Al-Benaa Institution. The application period is from 15/4/2022 to 31/6/2022.",
+      "p1":"Fully equipped sites with all the necessary devices.",
+      "p2":"Upon completion, you receive an experience certificate.",
+      "p3":"You will be trained by experienced engineers in the field.",
+      "p4":"Available Departments: Architectural, Civil, Electrical, and Surveying."
+  }
     ,
     "Professional Training":{
         "title":"Professional Training",
@@ -133,4 +247,8 @@
     }
 }
 
+
+
+
+ 
 
