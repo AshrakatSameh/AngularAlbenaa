@@ -239,7 +239,22 @@
       "message": "Message",
       "send": "Send"
     }
-  }
+  },
+  "html": {
+  "subtitle": "It is the starting point for learning programming and web design, where you will gain essential skills.",
+  "p1": "What is Web Design?",
+  "p2": "You will learn about <head>, the codes written inside it, and its uses.",
+  "p3": "You will learn how to write different types of headings and the formatting used in paragraphs.",
+  "p4": "You will learn how to upload images, videos, and audio to the website.",
+  "p5": "You will learn how to design tables and lists.",
+  "p6": "You will learn how to fully design a form.",
+  "p7": "You will learn how to use iframe.",
+  "p8": "You will create a website design using HTML.",
+  "p9": "You should know that HTML is a descriptive language, meaning it is used only to structure a webpage without adding any interactivity or visual styling. You can think of it as the skeleton of a human body. Then comes CSS, which is a styling language that enhances what you have built with HTML, adding aesthetics to the webpage, such as colors, fonts, button styles, and much more—CSS is a vast field. Additionally, JavaScript (JS) adds interactivity, making the page dynamic and functional. Together, these three languages form a complete system known as Front-End Development. If you master HTML, CSS, and JS, you can work as a Front-End Developer. However, to make your work easier, you should also learn frameworks like Bootstrap 5, which combines HTML, CSS, and JS in one place, making development faster and more efficient.",
+  "p10": "To build a website, you must first learn HTML, followed by CSS. I recommend this approach because web development will be a new concept for you. The most important thing at this stage is to learn how to create and structure a webpage, add images, tables, and interactive elements such as forms, videos, and audio files, display content, and use different types of tags in HTML.",
+  "p11": "By the way, you can build an entire website using only HTML without needing anything else. Of course, it won't be a practical or efficient website considering modern web development standards, but it serves as an example of the importance of HTML in learning web development.",
+  "p12": "CSS comes later as a complementary styling tool, separating design elements such as colors, fonts, and buttons. It enhances the webpage you created using HTML by defining the appearance and layout of the content."
+}
 }
 
  
