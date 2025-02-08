@@ -9,14 +9,14 @@
             class="php-email-form"
             id="scrolled_form"
           >
-            <h3>تقديم طلب التحاق</h3>
+            <h3>{{'Professional Training.application.title' | translate}}</h3>
             <div class="row gy-3">
               <div class="col-md-12">
                 <input
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="الاسم"
+                  placeholder="{{'Professional Training.application.name' | translate}}"
                   formControlName="name"
 
                   required
@@ -38,7 +38,7 @@
                   type="text"
                   class="form-control"
                   name="phone"
-                  placeholder="رقم الهاتف"
+                  placeholder="{{'Professional Training.application.phone' | translate}}"
                   formControlName="phone"
 
                   required
@@ -50,7 +50,7 @@
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="المؤهل الدراسي"
+                  placeholder="{{'Professional Training.application.Educational qualification' | translate}}"
                   formControlName="educationalQualification"
 
                   required
@@ -62,16 +62,16 @@
               <div class="col-md-12">
                 <select class="form-select" aria-label="Default select example" formControlName="trainingName">
                   <option selected disabled>
-                    القسم المراد الالتحاق به ؟
+                    {{'Professional Training.application.option1' | translate}}
                   </option>
-                  <option value="قسم الصحافه والاعلام">قسم الصحافه والاعلام </option>
-                  <option value="قسم السياحه والفنادق">قسم السياحه والفنادق</option>
-                  <option value="قسم المساحة والخرائط">  قسم المساحة والخرائط</option>
-                  <option value="قسم الحاسب الآلي">  قسم الحاسب الآلي</option>
-                  <option value="قسم اللغات والترجمة"> قسم اللغات والترجمة</option>
-                  <option value="قسم إدارة الاعمال و السكرتاريه">قسم إدارة الاعمال و السكرتاريه</option>
+                  <option value="قسم الصحافه والاعلام">{{'Professional Training.Training Information.title1' | translate}}</option>
+                  <option value="قسم السياحه والفنادق">{{'Professional Training.title2' | translate}}</option>
+                  <option value="قسم المساحة والخرائط"> {{'Professional Training.title3'}}</option>
+                  <option value="قسم الحاسب الآلي">{{'Professional Training.title4' | translate}}</option>
+                  <option value="قسم اللغات والترجمة"> {{'Professional Training.title5' | translate}}</option>
+                  <option value="قسم إدارة الاعمال و السكرتاريه">{{'Professional Training.title6' | translate}}</option>
                   <option value=" قسم الخدمات الصحيه">
-                    قسم الخدمات الصحيه
+                    {{'Professional Training.title7' | translate}}
                   </option>
                 </select>
               </div>

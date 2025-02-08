@@ -1,7 +1,7 @@
 {
   "nav": {
     "courses": "Courses",
-    "contact":"Contact Us"
+    "contact": "Contact Us"
   },
   "aboutCourses": {
     "title": "About Courses",
@@ -44,93 +44,202 @@
       "message": "Message",
       "send": "Send"
     },
-    "dropDown":{
-        "first":"Course Information",
-        "sec":"Course Enrollment Request",
-        "third":"Inquiry About a Course",
-        "fourth":"Complaints and Suggestions"
+    "dropDown": {
+      "first": "Course Information",
+      "sec": "Course Enrollment Request",
+      "third": "Inquiry About a Course",
+      "fourth": "Complaints and Suggestions"
     }
   },
-
-  "contact":{
-    "title":"Contact Us",
-    "description":"International Construction Investment and Development Company, an Egyptian Joint Stock Company #Investment_in_Love_for_Egypt 🇪🇬"
-
+  "contact": {
+    "title": "Contact Us",
+    "description": "International Construction Investment and Development Company, an Egyptian Joint Stock Company #Investment_in_Love_for_Egypt 🇪🇬"
   },
-
-  "firstAidCourse":{
-    "title":"You will learn how to use surveying instruments like the level and total station, and you will go for practical training to work with the instruments yourself.",
-    "subtitle":"Theoretical lectures",
-    "title1":"Fractures and splints",
-    "title2":"Dislocations",
-    "title3":"Burns and frostbite",
-    "title4":"Wounds and internal bleeding",
-    "title5":"Food poisoning and gas poisoning",
-    "title6":"Overdose poisoning",
-    "title7":"Fainting and recovery position",
-    "title8":"Heart attack",
-    "subtitle2":"Practical training",
-    "title9":"Cardiopulmonary Resuscitation (CPR)",
-    "title10":"Measuring blood pressure, pulse, respiration, and temperature",
-    "title11":"Intramuscular and intravenous injections",
-    "title12":"Allergy test",
-    "title13":"How to collect samples"
+  "firstAidCourse": {
+    "title": "You will learn how to use surveying instruments like the level and total station, and you will go for practical training to work with the instruments yourself.",
+    "subtitle": "Theoretical lectures",
+    "title1": "Fractures and splints",
+    "title2": "Dislocations",
+    "title3": "Burns and frostbite",
+    "title4": "Wounds and internal bleeding",
+    "title5": "Food poisoning and gas poisoning",
+    "title6": "Overdose poisoning",
+    "title7": "Fainting and recovery position",
+    "title8": "Heart attack",
+    "subtitle2": "Practical training",
+    "title9": "Cardiopulmonary Resuscitation (CPR)",
+    "title10": "Measuring blood pressure, pulse, respiration, and temperature",
+    "title11": "Intramuscular and intravenous injections",
+    "title12": "Allergy test",
+    "title13": "How to collect samples"
   },
-  "ICDL":{
-    "title":"In construction, you train and learn from experts and professionals with many years of experience, truly preparing for the job market—not just taking a course and that's it.",
-    "title1":"You will learn how to choose your device.",
-    "title2":"We will learn how to work with Windows",
-    "title3":"We will learn how to manage files and the practical way to organize them.",
-    "title4":"We will learn how to compress and decompress files and set a password.",
-    "title5":"We will learn how to install and uninstall programs.",
-    "title6":"We will learn the difference between the 64-bit version and the 32-bit (or 86) version",
-    "title7":"We will learn how to retrieve hidden files from a USB flash drive.",
-    "subtitle":"Inshallah, we will learn a lot during the course, which will be beneficial whether you need to create a presentation for yourself or work with formulas and large numbers. We will also cover infographics, which are extremely useful and can be applied in many areas. The topics mentioned are just examples—we will be learning much more throughout the course.If you're looking to build a CV for a course that includes all 7 modules (Word, Excel, PowerPoint, Access, IT, Windows, and Internet), this course will cover everything. Each program will be explained in detail, and you will practice and apply everything you learn.We will start with Microsoft Word and go through each program step by step.",
-    "subtitle2":"You will learn the basic menus File - Home - Insert - Design - Layout - Review Power Point program You will learn how to make a distinctive presentation SmartArt - Transition - Animation - Slide Show Excel program You will learn how to format tables and charts Styles Tables - Charts Link - Sheet Options Access program You will learn how to create a database with tables and codes, enter data, modify it, and also delete data. Create table in design view - Create table in sql code - Insert into data - Update date - Delete data",
-    "subtitle3":"Course duration: one month",
-    "subtitle4":"Trainer Engineer: Rafida"
+  "ICDL": {
+    "title": "In construction, you train and learn from experts and professionals with many years of experience, truly preparing for the job market—not just taking a course and that's it.",
+    "title1": "You will learn how to choose your device.",
+    "title2": "We will learn how to work with Windows",
+    "title3": "We will learn how to manage files and the practical way to organize them.",
+    "title4": "We will learn how to compress and decompress files and set a password.",
+    "title5": "We will learn how to install and uninstall programs.",
+    "title6": "We will learn the difference between the 64-bit version and the 32-bit (or 86) version",
+    "title7": "We will learn how to retrieve hidden files from a USB flash drive.",
+    "subtitle": "Inshallah, we will learn a lot during the course, which will be beneficial whether you need to create a presentation for yourself or work with formulas and large numbers. We will also cover infographics, which are extremely useful and can be applied in many areas. The topics mentioned are just examples—we will be learning much more throughout the course.If you're looking to build a CV for a course that includes all 7 modules (Word, Excel, PowerPoint, Access, IT, Windows, and Internet), this course will cover everything. Each program will be explained in detail, and you will practice and apply everything you learn.We will start with Microsoft Word and go through each program step by step.",
+    "subtitle2": "You will learn the basic menus File - Home - Insert - Design - Layout - Review Power Point program You will learn how to make a distinctive presentation SmartArt - Transition - Animation - Slide Show Excel program You will learn how to format tables and charts Styles Tables - Charts Link - Sheet Options Access program You will learn how to create a database with tables and codes, enter data, modify it, and also delete data. Create table in design view - Create table in sql code - Insert into data - Update date - Delete data",
+    "subtitle3": "Course duration: one month",
+    "subtitle4": "Trainer Engineer: Rofida"
   },
-  "scratch":{
-"title1":"Many parents now want to see their children excel and no longer want to instill the idea that they must become doctors or engineers, and that anything else means failure or lack of intelligence. However, this mindset has changed. Some parents now prefer to see their children stand out from the rest or pursue what they truly love, which will ultimately make them excel in it.",
-"title2":"Nowadays, children are highly engaged with technology, especially video games. So why not open the door for them to study what they are passionate about? That’s why we will teach them programming through Scratch, a specialized program designed to introduce children to coding.",
-    "subtitle":"Advantages of Scratch",
-    "p1":"Supports Arabic and English.",
-    "p2":"Teaching children multiple programming languages is important for them.",
-    "p3":"Providing a unique environment of games and graphic stories for children.",
-    "p4":"Developing children's creativity and enhancing their various skills.",
-    "p5":"The Scratch program is suitable for all age groups who use it.",
-    "p6":"It supports multiple languages, with Arabic being one of the most important.",
-    "p7":" It provides a large amount of visual and audio content for users free of charge.",
-    "p8":"Reducing the difficulties presented by programming languages.",
-    "p9":"Early and simplified learning of various programming languages.",
-    "subtitle2":"Projects and Application Levels of the Scratch Program",
-    "p10":"Level 1: Controlling the Movement of Objects",
-    "p11":"Level 2: Changing the Appearance of Objects.",
-    "p12":"Level 3: Creating an Interactive Game.",
-    "p13":"Level 4: Creating a Dialogue Between Two Characters.",
-    "p14":"Course Duration: 8 lectures, twice a week.",
-    "p15":"Trainer Engineer: Rafida"
-},
-"summer":{
-    "title":"A great opportunity for engineering and surveying students. The Training Administration announces the opening of applications for the summer training program for students of Engineering Colleges, the Faculty of Arts (Surveying Department), and governmental and private engineering and surveying institutes at Al-Benaa Institution. The application period is from 15/4/2022 to 31/6/2022.",
-    "p1":"Fully equipped sites with all the necessary devices.",
-    "p2":"Upon completion, you receive an experience certificate.",
-    "p3":"You will be trained by experienced engineers in the field.",
-    "p4":"Available Departments: Architectural, Civil, Electrical, and Surveying."
-},
-"html":{
-    "subtitle":"It is the starting point for learning programming and web design, where you will gain essential skills.",
-    "p1":"What is Web Design?",
-    "p2":"You will learn about <head>, the codes written inside it, and its uses.",
-    "p3":"You will learn how to write different types of headings and the formatting used in paragraphs.",
-    "p4":"You will learn how to upload images, videos, and audio to the website.",
-    "p5":"You will learn how to design tables and lists.",
-    "p6":"You will learn how to fully design a form.",
-    "p7":"You will learn how to use iframe.",
-    "p8":"You will create a website design using HTML.",
-    "p9":"You should know that HTML is a descriptive language, meaning it is used only to structure a webpage without adding any interactivity or visual styling. You can think of it as the skeleton of a human body. Then comes CSS, which is a styling language that enhances what you have built with HTML, adding aesthetics to the webpage, such as colors, fonts, button styles, and much more—CSS is a vast field. Additionally, JavaScript (JS) adds interactivity, making the page dynamic and functional. Together, these three languages form a complete system known as Front-End Development. If you master HTML, CSS, and JS, you can work as a Front-End Developer. However, to make your work easier, you should also learn frameworks like Bootstrap 5, which combines HTML, CSS, and JS in one place, making development faster and more efficient.",
-    "p10":"To build a website, you must first learn HTML, followed by CSS. I recommend this approach because web development will be a new concept for you. The most important thing at this stage is to learn how to create and structure a webpage, add images, tables, and interactive elements such as forms, videos, and audio files, display content, and use different types of tags in HTML.",
-    "p11":"By the way, you can build an entire website using only HTML without needing anything else. Of course, it won't be a practical or efficient website considering modern web development standards, but it serves as an example of the importance of HTML in learning web development.",
-    "p12":"CSS comes later as a complementary styling tool, separating design elements such as colors, fonts, and buttons. It enhances the webpage you created using HTML by defining the appearance and layout of the content."
+  "scratch": {
+    "title1": "Many parents now want to see their children excel and no longer want to instill the idea that they must become doctors or engineers, and that anything else means failure or lack of intelligence. However, this mindset has changed. Some parents now prefer to see their children stand out from the rest or pursue what they truly love, which will ultimately make them excel in it.",
+    "title2": "Nowadays, children are highly engaged with technology, especially video games. So why not open the door for them to study what they are passionate about? That’s why we will teach them programming through Scratch, a specialized program designed to introduce children to coding.",
+    "subtitle": "Advantages of Scratch",
+    "p1": "Supports Arabic and English.",
+    "p2": "Teaching children multiple programming languages is important for them.",
+    "p3": "Providing a unique environment of games and graphic stories for children.",
+    "p4": "Developing children's creativity and enhancing their various skills.",
+    "p5": "The Scratch program is suitable for all age groups who use it.",
+    "p6": "It supports multiple languages, with Arabic being one of the most important.",
+    "p7": " It provides a large amount of visual and audio content for users free of charge.",
+    "p8": "Reducing the difficulties presented by programming languages.",
+    "p9": "Early and simplified learning of various programming languages.",
+    "subtitle2": "Projects and Application Levels of the Scratch Program",
+    "p10": "Level 1: Controlling the Movement of Objects",
+    "p11": "Level 2: Changing the Appearance of Objects.",
+    "p12": "Level 3: Creating an Interactive Game.",
+    "p13": "Level 4: Creating a Dialogue Between Two Characters.",
+    "p14": "Course Duration: 8 lectures, twice a week.",
+    "p15": "Trainer Engineer: Rofida"
+  },
+  "summer": {
+    "title": "A great opportunity for engineering and surveying students. The Training Administration announces the opening of applications for the summer training program for students of Engineering Colleges, the Faculty of Arts (Surveying Department), and governmental and private engineering and surveying institutes at Al-Benaa Institution. The application period is from 15/4/2022 to 31/6/2022.",
+    "p1": "Fully equipped sites with all the necessary devices.",
+    "p2": "Upon completion, you receive an experience certificate.",
+    "p3": "You will be trained by experienced engineers in the field.",
+    "p4": "Available Departments: Architectural, Civil, Electrical, and Surveying."
+  },
+  "Professional Training": {
+    "title": "Professional Training",
+    "description": "Don't let your grades stop you from reaching your dream job! If you love journalism and media 🎥🎤 and dream of becoming a journalist or presenter, then your place is with us in the professional training program in journalism and media at the International Building Center. The opportunity is open to all high school, Al-Azhar, and diploma graduates, as well as institute and university students, without restrictions on the year of graduation! 👨‍🎓👩‍🎓",
+    "Training Information": {
+      "title1": "Journalism and Media",
+      "Journalism and Media": {
+        "mainTitle": "Journalism and Media Section",
+        "description": "The International Building Center in the Journalism and Media Department provides outstanding education that embraces diversity and aims to transfer knowledge while adhering to media education quality standards. Trainees will study the following sections within the Media Section:",
+        "point1": "Journalism and Digital Publishing Section",
+        "point2": "Public Relations and Marketing Communications Section",
+        "point3": "Radio and Television Section",
+        "subtitle": "One of the key features of the center:",
+        "point4": "Modern programs and curricula that align with the needs of the job market in various media specialties.",
+        "point5": "The faculty members have the highest level of academic expertise.",
+        "point6": "Training for students at major journalistic and media institutions through partnerships with many private organizations.",
+        "point7": "Conducting courses and workshops",
+        "point8": "Holding seminars and discussion panels with journalists and media professionals in various specialties.",
+        "point9": "Starting practical training and job market simulation in studios and labs affiliated with the center from the beginning of the student's enrollment at the center.",
+        "point10": "Providing summer training within accredited media institutions and news websites in accordance with many cooperation protocols.",
+        "point11": "We teach you writing, editing, directing, photography, production, radio and television.",
+        "point12": "We will also teach you how to be a professional journalist who can deliver information to people in a correct and objective way.",
+        "point13": "Visits are organized periodically to major media institutions such as (Youm7, Al-Watan Newspaper, Trend News, Channel 7).",
+        "subtitle2": "Graduate work areas:",
+        "point14": "Website design, journalistic writing.",
+        "point15": "Public relations and marketing in companies, institutions, banks and advertising companies.",
+        "point16": "Radio and television as a director, broadcaster, or producer of television or radio programmes."
+      }
+    },
+    "title2": "Tourism and Hotels Section",
+    "description2": "It is considered one of the most important departments that we offer at the International Construction Center because we have advantages that distinguish us from others (because we have permanent license No. 7 at the republic level and the first at the Upper Egypt level)",
+    "Tourism and Hotels": {
+      "point1": "We prepare you for the labor market.",
+      "point2": "You will learn from experts and international chefs.",
+      "point3": "She studies the basics of hotel and tourism services, as well as languages, airline and tourism business.",
+      "point4": "Practical training in major hotels, restaurants, airlines and tourism companies.",
+      "point5": "You will receive tools and clothing for practicing the profession.",
+      "point6": "Training and practical work are the main focus of the study.",
+      "subtitle": "And don't forget the accredited certificates:",
+      "point7": "Certificates of experience and training from major hotels, restaurants, tourism and travel companies.",
+      "point8": "Support with courses and grants in languages ​​and hotel services available at the center."
+    },
+    "title3": "Surveying and Mapping Section",
+    "description3": "It is considered one of the most important departments that we offer at the International Construction Center because we have advantages that distinguish us from others (because we have permanent license No. 7 at the republic level and the first at the Upper Egypt level)",
+    "Surveying and Mapping": {
+      "point1": "You will be trained by highly experienced engineers and university professors.",
+      "point2": "Practical training within major construction, contracting and surveying companies.",
+      "point3": "You will receive a helmet, safety vest and professional practice tools.",
+      "point4": "Training and practical work is the main focus of the study.",
+      "subtitle": "And don't forget the accredited certificates:",
+      "point5": "Certificates of experience from practical training in the Surveying and Mapping Department.",
+      "point6": "Support with courses and grants in surveying and mapping."
+    },
+    "title4": "Computer Section",
+    "description4": "It is considered one of the most important sections that we offer at the International Construction Center because we have advantages that distinguish us from others (because we have permanent license No. 7 at the republic level and the first at the Upper Egypt level)",
+    "ComputerSection": {
+      "point1": "It is taught by experienced engineers and university professors.",
+      "point2": "Training and practical work are the main focus of the study.",
+      "subtitle1": "Creativa training is done within the university.",
+      "point3": "The training will be practical in laboratories equipped with all types of modern devices.",
+      "point4": "You study everything related to computer science, from computer networks, programming languages, hardware maintenance, and software.",
+      "subtitle2": "Don't forget the approved certificates",
+      "point5": "Certificates of experience from practical training in the computer section.",
+      "point6": "Hardware and software certificate.",
+      "point7": "Support with accredited courses and grants in computer science."
+    },
+    "title5": "Languages and Translation Section",
+    "description5": "It is considered one of the most important departments that we offer at the International Construction Center because we have advantages that distinguish us from others (because we have permanent license No. 7 at the republic level and the first at the Upper Egypt level)",
+    "Languages and Translation": {
+      "subtitle1": "The Languages section includes the following specializations:",
+      "point1": "German language 🇩🇪",
+      "point2": "Italian language 🇮🇹 .",
+      "point3": "English language 🇺🇸 .",
+      "point4": "You will study the language of your choice during the two years.",
+      "point5": "You will be trained by the most prominent university professors and certified translators.",
+      "point6": "The main focus of the study is on pronunciation and actual practice of the language.",
+      "point7": "Also, practical training in major certified translators' offices.",
+      "subtitle2": "And don't forget the approved certificates:",
+      "point8": "Certificate of experience from one of the largest certified translation offices.",
+      "point9": "Support with language courses and scholarships available at the center."
+    },
+    "title6": "Business Administration and Secretarial Studies Section",
+    "description6": "It is considered one of the most important sections that we offer at the International Construction Center because we have advantages that distinguish us from others (because we have permanent license No. 7 at the republic level and the first at the Upper Egypt level)",
+    "Business": {
+      "point1": "Taught by experienced accountants and university professors.",
+      "point2": "Training and practical work is the main focus of the study.",
+      "point3": "You will study practical work in major tax and legal accounting offices.",
+      "point4": "You will learn business administration with ease because you will receive practical training in the Tax Authority.",
+      "point5": "You will learn and practice what you have learned practically on real work to keep pace with developments in the labor market.",
+      "point6": "You can do the equation and complete the Faculty of Commerce through us.",
+      "subtitle": "Don't forget the approved certificates",
+      "point7": "Certificate of experience from one of the largest entrepreneurship and corporate accounting companies.",
+      "point8": "Certificate of experience from a major legal and tax accounting office."
+    },
+    "mainTitlePart1": "Health Services Section",
+    "mainTitlePart2": "Nursing and Emergency Specialization - Analysis and Radiology Specialization",
+    "title7": "Health Services Section",
+    "description7": "It is considered one of the most important sections that we offer at the International Construction Center because we have advantages that distinguish us from others (because we have permanent license No. 7 at the republic level and the first at the Upper Egypt level)",
+    "point1": "You will be trained by expert doctors, nurses and university professors.",
+    "point2": "Practical training during study in government and private hospitals.",
+    "point3": "Training in analysis laboratories equipped with all devices.",
+    "point4": "You will learn all the medical terms that will qualify you to work in the largest hospitals.",
+    "point5": "The main focus of the study is practical training.",
+    "subtitle": "And don't forget the accredited certificates:",
+    "point6": "You will get certificates of experience and training from the hospitals where you will receive practical training.",
+    "point7": "You will get a certificate accredited by the largest government universities.",
+    "point8": "Support with courses to keep up with the job market.",
+    "application": {
+      "title": "Submit an application",
+      "name": "Name",
+      "phone": "Phone Number",
+      "Educational qualification": "Educational qualification",
+      "option1": "The section you want to join?"
+    },
+    "Complaints and Suggestions": {
+      "title": "Complaints and Suggestions",
+      "address": "Address",
+      "addressDes": "Saad Zaghloul Street (Station) - Next to the Egyptian Post - Andalusia Tower (A) - First Floor, Administrative, Minya, Egypt.",
+      "contact": "Contact Information",
+      "email": "Email",
+      "name": "name",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send"
+    }
+  }
 }
-}
+
+ 
