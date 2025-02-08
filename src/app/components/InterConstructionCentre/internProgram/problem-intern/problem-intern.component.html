@@ -4,8 +4,8 @@
 <section id="contact" class="contact section-bg" >
 
     <div class="container section-title" data-aos="fade-up">
-      <span class="my-shadow">شكاوي و مقترحات</span>
-      <h2 class="">شكاوي و مقترحات</h2>
+      <span class="my-shadow">{{'Professional Training.Complaints and Suggestions.title' | translate}}</span>
+      <h2 class="">{{'Professional Training.Complaints and Suggestions.title' | translate}}</h2>
       <!-- <p>شركة البناء الدولية للإستثمار و التنمية شركة مساهمة مصرية #الإستثمار_في_حب_مصر🇪🇬</p> -->
     </div>
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -15,15 +15,15 @@
         <div class="col-lg-6 my-bg" >
           <div class="info-item d-flex flex-column justify-content-center align-items-center inside-box address" data-aos="fade-up" data-aos-delay="200">
             <i class="bi bi-geo-alt"></i>
-            <h3>العنوان</h3>
-            <p>شارع سعد زغلول ( المحطة ) - بجوار البريد المصري - برج الأندلس ( أ ) - الدور الاول علوي اداري,المنياو مصر.</p>
+            <h3>{{'Professional Training.Complaints and Suggestions.address' | translate}}</h3>
+            <p>{{'Professional Training.Complaints and Suggestions.addressDes' | translate}}</p>
           </div>
         </div><!-- End Info Item -->
 
         <div class="col-lg-3 col-md-6 my-bg">
           <div class="info-item d-flex flex-column justify-content-center align-items-center inside-box" data-aos="fade-up" data-aos-delay="300">
             <i class="bi bi-telephone"></i>
-            <h3>بيانات الاتصال</h3>
+            <h3>{{'Professional Training.Complaints and Suggestions.contact' | translate}}</h3>
             <p>201090963631+</p>
           </div>
         </div><!-- End Info Item -->
@@ -31,7 +31,7 @@
         <div class="col-lg-3 col-md-6 my-bg">
           <div class="info-item d-flex flex-column justify-content-center align-items-center inside-box" data-aos="fade-up" data-aos-delay="400">
             <i class="bi bi-envelope"></i>
-            <h3>البريد الالكتروني</h3>
+            <h3>{{'Professional Training.Complaints and Suggestions.email' | translate}}</h3>
             <p>Albenaa.con@gmail.com</p>
           </div>
         </div><!-- End Info Item -->
@@ -48,25 +48,25 @@
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" [(ngModel)]="formData.name" placeholder="الاسم" required="">
+                <input type="text" name="name" class="form-control" [(ngModel)]="formData.name" placeholder="{{'Professional Training.Complaints and Suggestions.name' | translate}}" required="">
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" [(ngModel)]="formData.email" placeholder="البريد الالكتروني" required="">
+                <input type="email" class="form-control" name="email" [(ngModel)]="formData.email" placeholder="{{'Professional Training.Complaints and Suggestions.email' | translate}}" required="">
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" [(ngModel)]="formData.subject" placeholder="الموضوع" required="">
+                <input type="text" class="form-control" name="subject" [(ngModel)]="formData.subject" placeholder="{{'Professional Training.Complaints and Suggestions.subject' | translate}}" required="">
               </div>
 
               <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="6" [(ngModel)]="formData.description" placeholder="الرسالة" required=""></textarea>
+                <textarea class="form-control" name="message" rows="6" [(ngModel)]="formData.description" placeholder="{{'Professional Training.Complaints and Suggestions.message' | translate}}" required=""></textarea>
               </div>
 
               <div class="col-md-12 text-center">
                
 
-                <button type="submit">ارسال</button>
+                <button type="submit">{{'Professional Training.Complaints and Suggestions.send' | translate}}</button>
               </div>
 
             </div>
