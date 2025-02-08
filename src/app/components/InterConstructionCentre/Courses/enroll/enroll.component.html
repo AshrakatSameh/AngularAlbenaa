@@ -9,14 +9,14 @@
             class="php-email-form"
             id="scrolled_form"
           >
-            <h3>تقديم حجز كورس</h3>
+            <h3> {{'aboutCourses.applyCourse.title' |translate}} </h3>
             <div class="row gy-3">
               <div class="col-md-12">
                 <input
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="الاسم"
+                  placeholder="{{'aboutCourses.applyCourse.name' |translate}}"
                   formControlName="name"
 
                   required
@@ -28,7 +28,7 @@
                   type="email"
                   class="form-control"
                   name="email"
-                  placeholder="البريد الالكتروني"
+                  placeholder="{{'aboutCourses.applyCourse.email' |translate}}"
                   formControlName="email"
 
                   required
@@ -40,7 +40,7 @@
                   type="text"
                   class="form-control"
                   name="phone"
-                  placeholder="رقم الهاتف"
+                  placeholder=" {{'aboutCourses.applyCourse.phone' |translate}}"
                   formControlName="phoneNumber"
 
                   required
@@ -52,7 +52,7 @@
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="المؤهل الدراسي"
+                  placeholder="{{'aboutCourses.applyCourse.Qualification' |translate}}"
                   formControlName="educationalQualification"
 
                   required
@@ -65,24 +65,27 @@
                 <select class="form-select" aria-label="Default select example"  formControlName="courseName"
                 >
                   <option selected disabled>
-                    الكورس او الدبلومه المراد حجزه/ها ؟
+                    {{'aboutCourses.applyCourse.selection' |translate}}
                   </option>
-                  <option value="كورس المساحة ">كورس المساحة </option>
-                  <option value="كورس 3D-Max"> كورس 3D-Max </option>
-                  <option value="كورس_AuToCAD"> كورس_AuToCAD </option>
-                  <option value="دبلومةالمكتب الفني">دبلومةالمكتب الفني</option>
-                  <option value="دبلومة نظم المعلومات الجغرافية GIS"> دبلومة نظم المعلومات الجغرافية GIS</option>
-                  <option value="كورس ال_ REVIT المعماري">كورس ال_ REVIT المعماري</option>
+                  <option value="كورس المساحة "> {{'aboutCourses.course1' |translate}} </option>
+                  <option value="كورس 3D-Max"> {{'aboutCourses.course2' |translate}} </option>
+                  <option value="كورس_AuToCAD"> {{'aboutCourses.course3' |translate}} </option>
+                  <option value="دبلومةالمكتب الفني"> {{'aboutCourses.course4' |translate}}</option>
+                  <option value="دبلومة نظم المعلومات الجغرافية GIS"> {{'aboutCourses.course5' |translate}}</option>
+                  <option value="كورس ال_ REVIT المعماري">{{'aboutCourses.course6' |translate}}</option>
                   <option value="كورس الهندسة الكهربائية للمواقع الإنشائية والمباني">
-                    كورس الهندسة الكهربائية للمواقع الإنشائية والمباني
+                    {{'aboutCourses.course7' |translate}}
                   </option>
-                  <option value="دبلومة تصميم الجرافيك">دبلومة تصميم الجرافيك</option>
-                  <option value="دبلومة المساحة + التخطيط المتكاملة ">دبلومة المساحة + التخطيط المتكاملة </option>
-                  <option value="دورة حساب كميات">دورة حساب كميات</option>
-                  <option value="دبلومة إعداد مهندس موقع ">دبلومة إعداد مهندس موقع </option>
-                  <option value="التدريب الصيفي لكليات الهندسة والمساحة">التدريب الصيفي لكليات الهندسة والمساحة</option>
-                  <option value="كورس_html ">كورس_html </option>
-                  <option value="برنامج اسكراتش">برنامج اسكراتش</option>
+                  <option value="دبلومة تصميم الجرافيك">{{'aboutCourses.course8' |translate}}</option>
+                  <option value="دبلومة المساحة + التخطيط المتكاملة ">{{'aboutCourses.course9' |translate}}</option>
+                  <option value="دورة حساب كميات"> {{'aboutCourses.course10' |translate}}</option>
+                  <option value="دبلومة إعداد مهندس موقع ">{{'aboutCourses.course11' |translate}}</option>
+                  <option value="التدريب الصيفي لكليات الهندسة والمساحة">{{'aboutCourses.course12' |translate}}</option>
+                  <option value="كورس_html ">{{'aboutCourses.course13' |translate}} </option>
+                  <option value="برنامج اسكراتش">{{'aboutCourses.course14' |translate}}</option>
+                  <option value="ICDL">{{'aboutCourses.course15' |translate}}</option>
+                  <option value="كورس الاسعافات الاوليه ">{{'aboutCourses.course16' |translate}}</option>
+
                   
 
 
@@ -94,7 +97,7 @@
               <div class="col-md-12 text-center">
                
   
-                <button type="submit">تقديم</button>
+                <button type="submit">{{'aboutCourses.applyCourse.submit' |translate}}</button>
               </div>
             </div>
           </form>
