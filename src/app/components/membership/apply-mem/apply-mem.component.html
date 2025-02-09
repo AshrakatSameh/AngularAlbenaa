@@ -8,14 +8,14 @@
             class="php-email-form"
             id="scrolled_form"
           >
-            <h3>تقديم طلب عضوية</h3>
+            <h3> {{'membership.title' |translate}}</h3>
             <div class="row gy-3">
               <div class="col-md-12">
                 <input
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="اسم المتقدم باللغه العربيه"
+                  placeholder="{{'membership.f1' |translate}}"
                   formControlName="fullNameInArabic"
 
                   required
@@ -27,7 +27,7 @@
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder="اسم المتقدم باللغه الانجليزية"
+                  placeholder="{{'membership.f2' |translate}}"
                   formControlName="fullNameInEnglish"
 
                   required
@@ -39,7 +39,7 @@
                   type="text"
                   name="name"
                   class="form-control"
-                  placeholder=" الرقم القومي"
+                  placeholder="{{'membership.f3' |translate}}"
                   formControlName="nationalNumber"
 
                   required
@@ -51,7 +51,7 @@
                   type="email"
                   class="form-control"
                   name="email"
-                  placeholder="البريد الالكتروني"
+                  placeholder="{{'membership.f4' |translate}}"
                   formControlName="email"
 
                   required
@@ -63,7 +63,7 @@
                   type="text"
                   class="form-control"
                   name="phone"
-                  placeholder="رقم الهاتف"
+                  placeholder="{{'membership.f5' |translate}}"
                   formControlName="phone"
 
                   required
@@ -75,7 +75,7 @@
                   type="text"
                   class="form-control"
                   name="city"
-                  placeholder=" المحافظة"
+                  placeholder=" {{'membership.f6' |translate}}"
                   formControlName="city"
 
                   required
@@ -87,31 +87,31 @@
                   type="text"
                   class="form-control"
                   name="address"
-                  placeholder=" العنوان"
+                  placeholder=" {{'membership.f7' |translate}}"
                   formControlName="address"
 
                   required
                 />
               </div>
 
-              <h6>النوع:</h6>
+              <h6>{{'membership.subtitle1' |translate}}:</h6>
               <div class="form-check mt-1">
                 <input class="ms-2"  type="radio" name="gender" id="femaleRadio" formControlName="gender" value="female">
-                <label class="form-check-label" for="femaleRadio">أنثى</label>
+                <label class="form-check-label" for="femaleRadio">{{'membership.f8' |translate}}</label>
               </div>
               <div class="form-check mt-1">
                 <input class="ms-2 " type="radio" name="gender" id="maleRadio" formControlName="gender" value="male">
-                <label class="form-check-label" for="maleRadio">ذكر</label>
+                <label class="form-check-label" for="maleRadio">{{'membership.f9' |translate}}</label>
               </div>
 
-              <h6>الاجتماعية:</h6>
+              <h6>{{'membership.subtitle2' |translate}}:</h6>
               <div class="form-check mt-1">
                 <input class="ms-2 " type="radio" name="status" id="singleRadio" formControlName="status" value="single">
-                <label class="form-check-label" for="singleRadio">أعزب</label>
+                <label class="form-check-label" for="singleRadio">{{'membership.f10' |translate}}</label>
               </div>
               <div class="form-check mt-1">
                 <input class="ms-2 " type="radio" name="status" id="marriedRadio" formControlName="status" value="married">
-                <label class="form-check-label" for="marriedRadio">متزوج</label>
+                <label class="form-check-label" for="marriedRadio">{{'membership.f11' |translate}}</label>
               </div>
 
               
@@ -120,23 +120,23 @@
                 <select class="form-select" aria-label="Default select example" formControlName="memberType"
                 >
                   <option selected disabled>
-                    نوع العضوية ؟
+                    {{'membership.subtitle3' |translate}} ؟
                   </option>
-                  <option value="ماسيه">ماسيه</option>
-                  <option value="ذهبي">ذهبي</option>
-                  <option value="فضي">فضي</option>
+                  <option value="ماسيه">{{'membership.f12' |translate}}</option>
+                  <option value="ذهبي">{{'membership.f13' |translate}}</option>
+                  <option value="فضي">{{'membership.f14' |translate}}</option>
                 </select>
               </div>
 
               <div class="col-md-12">
                 <select class="form-select" aria-label="Default select example" formControlName="memberSystem">
                   <option selected disabled>
-                    نظام العضوية ؟
+                    {{'membership.subtitle4' |translate}}  ؟
                   </option>
-                  <option value="نصف سنويه">نضف سنويه</option>
-                  <option value="سنويه">سنويه</option>
-                  <option value="سنتين">سنتين</option>
-                  <option value="خمس سنوات">خمس سنوات</option>
+                  <option value="نصف سنويه"> {{'membership.f15' |translate}}</option>
+                  <option value="سنويه">{{'membership.f16' |translate}}</option>
+                  <option value="سنتين">{{'membership.f17' |translate}}</option>
+                  <option value="خمس سنوات"> {{'membership.f18' |translate}}</option>
 
                 </select>
               </div>
@@ -145,10 +145,10 @@
               <div class="col-md-12">
                 <select class="form-select" aria-label="Default select example" formControlName="memberCategory">
                   <option selected disabled>
-                  فئةالعضوية ؟
+                    {{'membership.subtitle5' |translate}} ؟
                   </option>
-                  <option value="فردي">فردي</option>
-                  <option value="عائلي">عائلي (لنظام الخمس سنوات فقط)</option>
+                  <option value="فردي">{{'membership.f19' |translate}}</option>
+                  <option value="عائلي"> {{'membership.f20' |translate}}</option>
                 </select>
               </div>
               
@@ -161,7 +161,7 @@
                   Your quote request has been sent successfully. Thank you!
                 </div>
   
-                <button type="submit">تقديم</button>
+                <button type="submit"> {{'membership.submit' |translate}}</button>
               </div>
             </div>
           </form>
