@@ -313,5 +313,260 @@
       "subtitle8": "الخدمات الإنشائية",
       "subtitle9": "التصميمات الهندسية"
     }
-  }
+  },
+
+  "html": {
+  "subtitle": "It is the starting point for learning programming and web design, where you will gain essential skills.",
+  "p1": "What is Web Design?",
+  "p2": "You will learn about <head>, the codes written inside it, and its uses.",
+  "p3": "You will learn how to write different types of headings and the formatting used in paragraphs.",
+  "p4": "You will learn how to upload images, videos, and audio to the website.",
+  "p5": "You will learn how to design tables and lists.",
+  "p6": "You will learn how to fully design a form.",
+  "p7": "You will learn how to use iframe.",
+  "p8": "You will create a website design using HTML.",
+  "p9": "You should know that HTML is a descriptive language, meaning it is used only to structure a webpage without adding any interactivity or visual styling. You can think of it as the skeleton of a human body. Then comes CSS, which is a styling language that enhances what you have built with HTML, adding aesthetics to the webpage, such as colors, fonts, button styles, and much more—CSS is a vast field. Additionally, JavaScript (JS) adds interactivity, making the page dynamic and functional. Together, these three languages form a complete system known as Front-End Development. If you master HTML, CSS, and JS, you can work as a Front-End Developer. However, to make your work easier, you should also learn frameworks like Bootstrap 5, which combines HTML, CSS, and JS in one place, making development faster and more efficient.",
+  "p10": "To build a website, you must first learn HTML, followed by CSS. I recommend this approach because web development will be a new concept for you. The most important thing at this stage is to learn how to create and structure a webpage, add images, tables, and interactive elements such as forms, videos, and audio files, display content, and use different types of tags in HTML.",
+  "p11": "By the way, you can build an entire website using only HTML without needing anything else. Of course, it won't be a practical or efficient website considering modern web development standards, but it serves as an example of the importance of HTML in learning web development.",
+  "p12": "CSS comes later as a complementary styling tool, separating design elements such as colors, fonts, and buttons. It enhances the webpage you created using HTML by defining the appearance and layout of the content."
+},
+"revit":{
+    "subtitle":"Now you can book your spot in our Architectural Revit course.",
+    "p1":"You will get familiar with the program interface, all commands, and menus.",
+    "p2":"You will learn massing techniques (Geometric, Organic, Parametric, Deconstructivist, and Classic).",
+    "p3":"You will learn how to create working drawings.",
+    "p4":"You will learn how to produce architectural drawings with an engineering company title block.",
+    "p5":"You will learn how to draw plans, elevations, sections, and layouts.",
+    "p6":"Practical application on 21 interior and exterior projects."
+},
+"autocad":{
+    "title":"You will learn everything about the program, from the interface to executing a complete project with your own hands. You won’t finish the course without becoming a professional, guided by experts in the field.",
+    "p1":"You will get familiar with the program interface, all commands, and menus.",
+    "p2":"You will learn to master drawing Plans, Elevations, Sections, Layouts, and Details.",
+    "p3":"In addition, you will learn how to work with X-REF.",
+    "p4":"Practical application through a series of workshops on various projects with different uses.",
+    "p5":"The course is available for booking in both online and offline formats."
+},
+"max":{
+    "title":"3ds Max is widely used by major companies, and as an engineer, you will need it to present your work more realistically since your project will be in 3D. We will start with you from scratch to the professional level, beginning with selecting the right device, where and how to buy it, and the specifications you will need now and in the future.",
+    "subtitle":"And we will start by installing the software and go through four important stages.",
+    "p1":"Modeling.",
+    "p2":" Material.",
+    "p3":"Lighting.",
+    "p4":"Material.",
+    "p5":"And you will be working with V-Ray rendering, which is the most important tool currently. You will be able to produce a complete interior and exterior project. We will apply everything practically at every step as we work on Interior & Exterior projects together, and you will receive tasks for each stage to practice on.",
+    "p6":"16 lectures, each lasting 2 hours."
+},
+"electric": {
+    "title": "Course Content",
+    "p1": "Introduction to project stakeholders and how to coordinate between them",
+    "p2": "Steps for electrical project design and its requirements",
+    "p3": "Basic equipment in electrical installations",
+    "p4": "Medium voltage networks",
+    "p5": "Transformers",
+    "p6": "Emergency generators",
+    "p7": "Electrical distribution panels",
+    "p8": "Cables and electrical conductors",
+    "p9": "Electrical protection devices",
+    "p10": "How to read and apply electrical schematics",
+    "p11": "Estimation of electrical loads",
+    "p12": "Design of distribution panels, networks, and sub-circuits",
+    "p13": "Power supply for main panels",
+    "p14": "Design models",
+    "p15": "Electrical lighting systems",
+    "p16": "Lighting science",
+    "p17": "Basic lighting quantities and units",
+    "p18": "Lighting intensity calculations",
+    "p19": "Grounding systems",
+    "p20": "Grounding basics and its importance",
+    "p21": "Components of the grounding system",
+    "p22": "Calculation of ground resistance value",
+    "p23": "Grounding in buildings",
+    "p24": "Lightning and surge protection systems",
+    "p25": "How to inspect electrical works",
+    "p26": "Reviewing electrical works",
+    "p27": "Electrical testing",
+    "p28": "Sample acceptance checklists",
+    "p29": "Instructor: Engineer Mohamed Shaaban"
+  },
+  "membership": {
+    "title": "Membership Application",
+    "f1": "Applicant's Name in Arabic",
+    "f2": "Applicant's Name in English",
+    "f3": "National ID",
+    "f4": "Email",
+    "f5": "Phone Number",
+    "f6": "Governorate",
+    "f7": "Address",
+    "subtitle1": "Gender",
+    "f8": "Female",
+    "f9": "Male",
+    "subtitle2": "Marital Status",
+    "f10": "Single",
+    "f11": "Married",
+    "subtitle3": "Membership Type",
+    "f12": "Diamond",
+    "f13": "Gold",
+    "f14": "Silver",
+    "subtitle4": "Membership Plan",
+    "f15": "Semi-Annual",
+    "f16": "Annual",
+    "f17": "Two Years",
+    "f18": "Five Years",
+    "subtitle5": "Membership Category",
+    "f19": "Individual",
+    "f20": "Family (For the five-year plan only)",
+    "submit": "Submit"
+  },
+  "aboutMembership": {
+    "title": "Memberships",
+    "description": "Al-Binaa International Investment and Development Company - an Egyptian joint-stock company 1415 Investment Minya offers memberships. It is a membership that every individual needs to obtain numerous and diverse services in various aspects of life. Through this membership card, members receive benefits in different sectors (health, consumer goods, education, entertainment, and more). There are different types of memberships: Diamond, Gold, and Silver. The Diamond membership provides all privileges, discounts, and reductions on all services from the first to the fifth star. The Gold membership offers benefits from the first to the fourth star, while the Silver membership grants benefits from the first to the third star. After selecting the membership type, the duration of the membership can be chosen, ranging from six months to five years.",
+    "title2": "Membership Table",
+    "title3": "Locations and Discounts",
+    "download": "Click to Download.",
+    "dropdown": {
+      "title": "Membership",
+      "f1": "Apply for Membership",
+      "f2": "About Memberships"
+    }
+  },
+  "surveying": {
+    "title": "You will learn about surveying instruments such as the level and total station, and you will practice using them in the field.",
+    "subtitle": "Explanation of the scientific principles of surveying engineering",
+    "dis1": "(Introduction to surveying - Plane and geodetic surveying – Coordinate systems – Angle and deviation calculations – Roubier and chain - Benchmark level and network leveling). Surveying instruments (Level - Total Station)",
+    "subtitle2": "Explanation of instruments and site work",
+    "dis2": "(Steps for implementing network leveling on-site – Explanation of the level and reading elevations – Leveling ceilings and floors – Checking excavation and replacement levels - Explanation of the Total Station and steps for surveying and marking – Data retrieval and transfer methods - Monitoring excavation and backfilling work and operating heavy equipment - Surveying and marking methods). A comprehensive course on surveying programs (Sokkia Link - AutoCAD 2D & 3D).",
+    "subtitle3": "Explanation of office technical work",
+    "dis3": "(Network leveling calculations and system conversions – Calculating excavation and backfilling quantities and differentiating between soil layers – Data transfer methods between the Total Station and a computer – Types of surveying files - Explanation of ProLink software – Explanation of Sokkia Link software – Explanation of AutoCAD software – Reading blueprints).",
+    "subtitle4": "After completing the course, you will be able to:",
+    "p1": "Pass any interview at any company.",
+    "p2": "Work as a construction surveyor in the architectural field.",
+    "p3": "Work as a road, water, and sewage surveyor in infrastructure projects.",
+    "p4": "Work in technical office surveying.",
+    "p5": "In other words, become an expert surveyor in all fields.",
+    "subtitle5": "Course benefits",
+    "p6": "You can join the General Syndicate of Surveying Engineers and pass the skill assessment test at the Ministry of Manpower, allowing you to change your job title on your national ID.",
+    "p7": "The course certificate is officially accredited for work inside and outside the country. You will receive a certificate certified by the institution for vocational training in surveying and another certificate for work and training in surveying, authenticated by the real estate registry.",
+    "p8": "Training is conducted using the latest surveying instruments and software.",
+    "p9": "Training is provided by specialized engineers working in major companies inside and outside Egypt.",
+    "p10": "The number of trainees in each group does not exceed 10 people for better comprehension. The study duration is one month."
+  },
+  "technical": {
+  "title": "How to Become a Skilled Technical Office Engineer and Master All the Details You Need for Your Future Work. The Technical Office course has become one of the most in-demand fields in the job market, but many students and graduates are unaware of the responsibilities of a technical office engineer, the fields they will work in, and whether it's better for them to work in design or technical office engineering.",
+
+  "p1": "We will learn everything about bids and tenders in detail, their types, how project tenders are announced, and the criteria for selecting the contracting company to execute the project. We will also understand the documents submitted in a tender and how to prepare them.",
+
+  "p2": "We will discuss the differences between (Shop Drawings), (Tender Drawings), and (As-Built Drawings).",
+
+  "p3": "We will fully understand the roles of the owner, consultant, general contractor, and subcontractors in the project.",
+
+  "p4": "We will learn what a technical envelope and a financial envelope are. We will also learn about inquiry sessions, bid opening sessions, and negotiation sessions, as well as the differences between open tenders, limited tenders, and direct awarding.",
+
+  "p5": "We will understand what temporary security, initial security, final security, and letters of guarantee are, along with their functions. Additionally, we will learn how financial transactions occur between companies in the contracting field, how financial payments and project advances are processed, and how the contractor ensures their rights in the advance payment.",
+
+  "p6": "We will learn what a BOQ (Bill of Quantities) is, how project estimations are prepared, and what the project's technical specifications, general and special conditions are, along with how they are prepared.",
+
+  "p7": "We will understand the differences between a site handover report, an initial acceptance report, and a final acceptance report, as well as what work guarantees and the ten-year guarantee of a project mean.",
+
+  "p8": "We will learn together about construction contracts and their types.",
+
+  "p9": "We will understand what the Tenders and Auctions Law No. 182 of 2018 is and its key provisions. We will also discuss the most important articles of the Unified Building Law.",
+
+  "p10": "We will cover the essential stages of a construction project in detail: Feasibility study stage, Design and project documentation stage, Project bidding stage, Contracting stage, Execution stage, and Project handover stage.",
+
+  "p11": "Excel: We will introduce the program, how to create Excel sheets for quantity surveying, rebar detailing, and how to utilize Excel to maximize its potential.",
+
+  "p12": "Pricing: We will learn how to perform cost analysis for project items, calculate the actual cost of each item, price the bill of quantities, add profit margins and administrative expenses, and understand the difference between Direct Cost and Indirect Cost.",
+
+  "p13": "We will understand labor and equipment productivity rates, as well as material consumption rates.",
+
+  "p14": "We will learn how contractors are compensated for price differences and review the provisions of the Tenders and Auctions Law No. 182 of 2018.",
+
+  "p15": "Payment Certificates: We will learn what payment certificates are, how to prepare them in detail, apply them during the lecture, and create a complete payment certificate while addressing potential challenges.",
+
+  "p16": "We will understand deductions from payment certificates, tax, and insurance withholdings.",
+
+  "p17": "Quantity Surveying: We will learn the difference between engineering quantity surveying and actual quantity surveying and when to use each.",
+
+  "p18": "We will learn how to survey quantities for different work items (concrete and finishes) and incorporate these items into the bill of quantities.",
+
+  "p19": "We will understand what additions and deductions mean.",
+
+  "p20": "How to create a quantity surveying sheet.",
+
+  "p21": "Rebar detailing for different structural elements.",
+
+  "p22": "Understanding splice locations: Footings, Tie Beams, Raft Foundation, Columns, Beams, Flat Slab, Solid Slab, Stairs.",
+
+  "p23": "We will also learn how to minimize steel waste using the Cutting Optimization program.",
+
+  "p24": "The software programs we will use and apply: Excel, AutoCAD, Cutting Optimization, AutoRebar, and AutoCAD Structure Detailing.",
+
+  "p25": "At the end of the course, a real project will be applied during the lessons."
+},
+"gis": {
+    "title": "In this training, you learn from experts with years of experience in the field and get truly prepared for the job market—it's not just a course and that's it.",
+    "title2": "The diploma lasts for 3 months or more and consists of 24 practical lectures, with two lectures conducted per week.",
+    "h1": "The diploma is divided into 3 levels as follows",
+    "h2": "Level One",
+    "p1": "Gis Basic ... Basic level in Geographic Information Systems",
+    "p2": "What is Gis ... Introduction to Geographic Information Systems",
+    "p3": "Projection & Datum ... Projections & Geodetic Datum",
+    "p4": "Spatial Data ... Types of Spatial Data",
+    "p5": "Geoprocessing ... Processes and Data Processing",
+    "p6": "Gis Application ... Applications of Geographic Information Systems",
+    "p7": "Gis Users ... GIS Users",
+    "p8": "Georeference ... Georeferencing",
+    "p9": "Create Database ... Creating Geographic Databases",
+    "p10": "Digitizing ... Digitization (Drawing)",
+    "p11": "Selection ... Querying",
+    "p12": "Topology ... Geometric Rules",
+    "p13": "Layout ... Output",
+    "h3": "Level Two",
+    "f1": "Gis Advanced ... Advanced level in Geographic Information Systems",
+    "f2": "Part One ... Producing Accurate Spatial Data",
+    "f3": "Advanced Editing ... Professional Editing",
+    "f4": "Network ... Networks",
+    "f5": "Building Geocode ... Geocoding for Buildings",
+    "f6": "Query ... Query Language",
+    "f7": "Ex-Data _ template schema ...",
+    "f8": "Pre-prepared data for training and building display structures and fixed project drawings",
+    "f9": "Project ... A final real-world project similar to job market tasks",
+    "f10": "Part Two - Arc Toolbox Tools",
+    "f11": "3D Analyst Tools ... 3D Analysis Tools",
+    "f12": "Analysis Tools ... Analysis Tools",
+    "f13": "Cartography Tools ... Cartography Tools",
+    "f14": "Conversion Tools ... Conversion Tools",
+    "f15": "Data Interoperability Tools ... Data Interoperability Tools",
+    "f16": "Data Management Tools ... Data Management Tools",
+    "f17": "Editing Tools ... Editing Tools",
+    "f18": "Geocoding Tools ... Geocoding Tools",
+    "f19": "Geostatistical Analyst Tools ... Geostatistical Analysis Tools",
+    "f20": "Linear Referencing Tools ... Linear Referencing Tools",
+    "f21": "Multidimension Tools ... Multidimensional Tools",
+    "f22": "Network Analyst Tools ... Network Analysis Tools",
+    "f23": "Parcel Fabric Tools ... Parcel Fabric Tools",
+    "f24": "Schematics Tools ... Schematics Tools",
+    "f25": "Server Tools ... Server Tools",
+    "f26": "Space Time Pattern Mining Tools ... Space-Time Pattern Mining Tools",
+    "f27": "Spatial Analyst Tools ... Spatial Analysis Tools",
+    "f28": "Spatial Statistics Tools ... Spatial Statistics Tools",
+    "f29": "Tracking Analyst Tools ... Tracking Analysis Tools",
+    "h4": "Level Three",
+    "k1": "Gis Application ... Applications in Geographic Information Systems",
+    "k2": "Part One - Model Builder",
+    "k3": "What is A Model ... Definition of Modeling and How to Create It",
+    "k4": "NDVI Model ... Vegetation Cover Analysis Model",
+    "k5": "DEM Model ... Digital Elevation Model Analysis",
+    "k6": "IDW Model ... Urban Analysis Model",
+    "k7": "Workshop on QGIS & ArcGIS Pro",
+    "k8": "Part Two - Arc Scene Analysis ... Arc Scene Interface Explanation and Usage",
+    "k9": "Google Earth ... Complete Explanation of Google Earth",
+    "k10": "Digital Elevation Model ... Digital Elevation Model",
+    "k11": "Hydrological Analysis ... Hydrological Analysis",
+    "k12": "Digital Shoreline Analysis System ... Shoreline Analysis",
+    "k13": "Urban Analysis ... Urban Analysis"
 }
+}
+
+ 
