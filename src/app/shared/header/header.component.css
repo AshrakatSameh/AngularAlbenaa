@@ -347,3 +347,7 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+  .dropdown-toggle::after {
+    display: none !important;
+  }
