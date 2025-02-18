@@ -105,18 +105,18 @@
           <div *ngIf="isLoggedIn(); then loggedInTemplate else loggedOutTemplate"></div>
           <ng-template #loggedInTemplate >
             <div class="navbar-nav py-0" (click)="logout()">
-              <li><a class="getstarted scrollto" routerLink="registration" >تـسجيل الخروج</a></li>
+              <li><a class="getstarted scrollto" routerLink="registration" >{{'nav.log' | translate}}</a></li>
 
              
           </div>
           <div *ngIf="isAdmin()" class="navbar-nav py-0" >
-            <li><a class="getstarted scrollto" routerLink="controll" >لوحة التحكم</a></li>
+            <li><a class="getstarted scrollto" routerLink="controll" >{{'nav.dash' | translate}}</a></li>
 
            
         </div>
           </ng-template>
           <ng-template #loggedOutTemplate >
-            <li><a class="getstarted scrollto" routerLink="login">تـسجيل الـدخول</a></li>
+            <li><a class="getstarted scrollto" routerLink="login">{{'nav.login' | translate}}</a></li>
 
           </ng-template>
 

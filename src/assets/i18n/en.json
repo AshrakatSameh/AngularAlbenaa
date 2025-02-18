@@ -8,7 +8,10 @@
      "center": "Media Center",
 "news": "News",
 "magazine": "Magazine",
-"jobs":"Jobs"
+"jobs":"Jobs",
+"log":"Log-Out",
+"login":"Log-In ",
+"dash":"Dashboard"
   },
   "aboutCourses": {
     "title": "About Courses",
@@ -790,6 +793,16 @@
       "k22": "Name",
       "k23": "Submit"
     }
+  }
+  ,
+  "jobs":{
+    "title":"Jobs"
+  },
+  "news":{
+    "title":"News"
+  },
+  "magazine":{
+    "title":"Magazine"
   }
 
 
