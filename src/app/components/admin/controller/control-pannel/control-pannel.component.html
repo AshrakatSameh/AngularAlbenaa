@@ -2124,6 +2124,7 @@
               <th>الرقم التسلسلي</th>
               <th>الإسم</th>
               <th>الرقم القومي</th>
+              <th> الرقم التسلسلي</th>
               <th>الفئه</th>
               <th>التقدير</th>
               <th>تاريخ البدايه</th>
@@ -2138,6 +2139,7 @@
               <th scope="row">{{ item.id }}</th>
               <td>{{ item.name }}</td>
               <td>{{ item.nationalId }}</td>
+              <td>{{ item.serialNumber }}</td>
               <td>{{ item.category }}</td>
               <td>{{ item.rate }}</td>
               <td>{{ item.startDate | date: 'yyyy-MM-dd'}}</td>
@@ -2271,8 +2273,20 @@
                         type="number"
                         class="form-control"
                         name="price"
-                        placeholder=" الرقم التسلسلي"
+                        placeholder=" الرقم القومي"
                         formControlName="nationalId"
+
+                        required
+                      />
+                    </div>
+
+                    <div class="col-md-12">
+                      <input
+                        type="number"
+                        class="form-control"
+                        name="price"
+                        placeholder=" الرقم التسلسلي"
+                        formControlName="serialNumber"
 
                         required
                       />

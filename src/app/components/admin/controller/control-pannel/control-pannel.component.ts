@@ -155,6 +155,7 @@ this.MyCertificateForm = this.fb.group({
   endDate:['', Validators.required],
   certificateUrl:['',Validators.required],
   studentImgUrl:['',Validators.required],
+  serialNumber:['',Validators.required]
 });
 
 
@@ -429,15 +430,17 @@ this.MyCertificateForm = this.fb.group({
       const category = this.MyCertificateForm.get('category')?.value;
       const startDate = this.MyCertificateForm.get('startDate')?.value;
       const endDate = this.MyCertificateForm.get('endDate')?.value;
+      const serialNumber = this.MyCertificateForm.get('serialNumber')?.value;
       const rate = this.MyCertificateForm.get('rate')?.value;
     
-      if (name && nationalId && category && rate && startDate && endDate) {
+      if (name && nationalId && category && rate && startDate && endDate && serialNumber) {
         formData.append('name', name);
         formData.append('nationalId', nationalId);
         formData.append('category', category);
         formData.append('startDate', startDate);
         formData.append('endDate', endDate);
         formData.append('rate', rate);
+        formData.append('serialNumber',serialNumber);
       } else {
         console.error('One or more form fields are null');
         return;

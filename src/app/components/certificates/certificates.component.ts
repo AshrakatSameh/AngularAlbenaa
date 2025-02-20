@@ -12,7 +12,7 @@ export class CertificatesComponent {
 
   certificates :any[] = [];
   filteredCertificates: any[] = []; // Certificates to display
-  nationalId: string = ''; // Input for national ID search
+  serialNumber: string = ''; // Input for national ID search
 
   constructor(private certificateService:CertificatesService,private http: HttpClient,private sanitizer: DomSanitizer){}
 
@@ -30,7 +30,7 @@ export class CertificatesComponent {
 
   searchByNationalId(): void {
     this.filteredCertificates = this.certificates.filter(
-      (cert) => cert.nationalId === this.nationalId
+      (cert) => cert.serialNumber === this.serialNumber
     );
   }
  

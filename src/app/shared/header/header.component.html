@@ -39,14 +39,51 @@
               <li><a routerLink="certificates">الشهادات</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span>مؤسسه البناء</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span> {{'nav.fondation' |translate}}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a routerLink="ConstFoundation">أنشطة المؤسسة</a></li>
-              <li><a routerLink="enroll">تقديم طلب</a></li>
+              <li><a routerLink="ConstFoundation"> {{'nav.activite' |translate}}</a></li>
+              <li><a routerLink="enroll"> {{'construction.apply.title' |translate}}</a></li>
+            </ul>
+          </li>
+          
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" (click)="toggleDropdown($event)">
+              {{'nav.more' |translate}} 
+              <i class="bi bi-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu" [class.show]="isDropdownOpen">
+              
+              <!-- الإعلامي Dropdown -->
+              <li class="dropdown">
+                <a href="#" (click)="toggleSubDropdown($event, 'media')">
+                  <span> {{'nav.center' |translate}}</span> <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" [class.show]="subDropdowns['media']">
+                  <li><a class="dropdown-item" routerLink="news">{{'nav.news' |translate}}</a></li>
+                  <li><a class="dropdown-item" routerLink="magazine">{{'nav.magazine' |translate}}</a></li>
+                </ul>
+              </li>
+  
+              <!-- Membership Dropdown -->
+              <li class="dropdown">
+                <a href="#" (click)="toggleSubDropdown($event, 'membership')">
+                  <span>{{ 'aboutMembership.dropdown.title' | translate }}</span> 
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" [class.show]="subDropdowns['membership']">
+                  <li><a class="dropdown-item" routerLink="membershipApply">{{ 'aboutMembership.dropdown.f1' | translate }}</a></li>
+                  <li><a class="dropdown-item" routerLink="guideMem">{{ 'aboutMembership.dropdown.f2' | translate }}</a></li>
+                </ul>
+              </li>
+  
+              <li><a class="dropdown-item" routerLink="jobs">{{'nav.jobs' |translate}}</a></li>
+              <li><a class="dropdown-item" routerLink="contact">{{ 'nav.contact' | translate }}</a></li>
+  
             </ul>
           </li>
          
-          <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span>المركز الأعلامي</span> <i class="bi bi-chevron-down"></i></a>
+          <!-- <li class="dropdown"><a href="" (click)="toggleDropdown($event)"><span>المركز الأعلامي</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="dropdown-item" routerLink="news">الاخبار</a></li>
               <li><a class="dropdown-item" routerLink="magazine">المجله</a></li>
@@ -61,27 +98,29 @@
           </li>
           <li><a routerLink="jobs">وظائف</a></li>
           
-          <li><a class="nav-link scrollto" routerLink="contact"> {{'nav.contact' |translate}}</a></li>
+          <li><a class="nav-link scrollto" routerLink="contact"> {{'nav.contact' |translate}}</a></li> -->
+
+          
 
           <div *ngIf="isLoggedIn(); then loggedInTemplate else loggedOutTemplate"></div>
           <ng-template #loggedInTemplate >
             <div class="navbar-nav py-0" (click)="logout()">
-              <li><a class="getstarted scrollto" routerLink="registration" >تـسجيل الخروج</a></li>
+              <li><a class="getstarted scrollto" routerLink="registration" >{{'nav.log' | translate}}</a></li>
 
              
           </div>
           <div *ngIf="isAdmin()" class="navbar-nav py-0" >
-            <li><a class="getstarted scrollto" routerLink="controll" >لوحة التحكم</a></li>
+            <li><a class="getstarted scrollto" routerLink="controll" >{{'nav.dash' | translate}}</a></li>
 
            
         </div>
           </ng-template>
           <ng-template #loggedOutTemplate >
-            <li><a class="getstarted scrollto" routerLink="login">تـسجيل الـدخول</a></li>
+            <li><a class="getstarted scrollto" routerLink="login">{{'nav.login' | translate}}</a></li>
 
           </ng-template>
 
-          <!-- <ul class="nav-menu ">
+          <ul class="nav-menu ">
             <li class="nav-item">
               <div class="dropdown">
                 <button class="dropbtn">
@@ -98,7 +137,7 @@
              
               </div>
             </li>
-          </ul> -->
+          </ul>
 
           
 

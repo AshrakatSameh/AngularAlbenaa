@@ -1,7 +1,17 @@
 {
   "nav": {
     "courses": "Courses",
-    "contact": "Contact Us"
+    "contact": "Contact Us",
+     "more":"More",
+     "fondation":"Al-Binaa Foundation",
+     "activite":"Institution Activities",
+     "center": "Media Center",
+"news": "News",
+"magazine": "Magazine",
+"jobs":"Jobs",
+"log":"Log-Out",
+"login":"Log-In ",
+"dash":"Dashboard"
   },
   "aboutCourses": {
     "title": "About Courses",
@@ -86,6 +96,19 @@
     "subtitle2": "You will learn the basic menus File - Home - Insert - Design - Layout - Review Power Point program You will learn how to make a distinctive presentation SmartArt - Transition - Animation - Slide Show Excel program You will learn how to format tables and charts Styles Tables - Charts Link - Sheet Options Access program You will learn how to create a database with tables and codes, enter data, modify it, and also delete data. Create table in design view - Create table in sql code - Insert into data - Update date - Delete data",
     "subtitle3": "Course duration: one month",
     "subtitle4": "Trainer Engineer: Rofida"
+  },
+  "home": {
+    "title1": "Our Vision",
+    "title2": "Our Mission",
+    "title3": "Foundation",
+    "title4": "Sectors & Activities",
+    "title5": "Our Motto",
+    "sutitle1": "In line with the vision of the political leadership, His Excellency the President of the Republic, which places great emphasis on the (Sustainable Development) agenda, and the strategic plan adopted by all executive entities—based on partnership and collaboration between the government, civil society sectors, companies, institutions, associations, political parties, unions, and vocational training centers to implement this strategy and achieve the goals of Egypt’s Vision 2030 for sustainable development. Committed to our national responsibility and following these steps under the slogan (Work – Construction – Glory), all our activities are directed towards achieving the sustainable development goals of Egypt’s Vision 2030.",
+    "sutitle2": "The company's strategic plan, across all its sectors, has taken on this responsibility for over twenty years, always striving to lead and remain at the forefront, continuously seeking excellence in all company sectors and activities.",
+    "sutitle3": "Al-Benaa International Investment & Development Company is an Egyptian joint-stock company established under Incorporation Decision No. 45/TM in accordance with the provisions of Law No. 159 of 1981, registered under Commercial Register No. 1415 for Investment in Minya.",
+    "sutitle4": "Investment, International & Regional Cooperation, and Local Development Sector. Construction & General Contracting Sector – Al-Benaa International for Construction, General Contracting, and Surveying Works. Training Sector – Al-Benaa International Center for Advanced Studies & Training. Civil, Community, and Developmental Work Sector – Al-Benaa Foundation, registered under No. 223 of 2022 with the Ministry of Social Solidarity, Bandar Minya Social Administration.",
+    "sutitle5": "Work – Construction – Glory",
+    "sutitle6": "Building together, we shape the future generations."
   },
   "scratch": {
     "title1": "Many parents now want to see their children excel and no longer want to instill the idea that they must become doctors or engineers, and that anything else means failure or lack of intelligence. However, this mindset has changed. Some parents now prefer to see their children stand out from the rest or pursue what they truly love, which will ultimately make them excel in it.",
@@ -690,7 +713,98 @@
     "p3": "The course includes drawings from real projects executed by the instructor, available in AutoCAD format for download and follow-up.",
     "p4": "Strong technical support and a discussion group for follow-ups, questions, and valuable discussions.",
     "p5": "Duration: 3 months, 2 days per week."
+  },
+  "construction": {
+    "title": "Institution Activities",
+    "sub": "The objectives and activities for which the institution was established",
+    "f1": "Providing scientific, educational, and cultural services to the local community.",
+    "f2": "Various social assistance programs.",
+    "f3": "Economic development.",
+    "f4": "Environmental protection and conservation.",
+    "f5": "Educational services.",
+    "f6": "Healthcare services.",
+    "f7": "Cultural, scientific, and religious services.",
+    "f8": "Social defense.",
+    "f9": "Literary activities.",
+    "f10": "Organization and administration.",
+    "f11": "Providing social aid and projects.",
+    "f12": "Providing care for people with special needs and the elderly.",
+    "f13": "Providing care for motherhood, childhood, and families.",
+    "f14": "Establishing productive, service, and cultural centers.",
+    "f15": "Improving the environment and local community development.",
+    "f16": "Providing medical and food assistance to patients and those in need.",
+    "f17": "Building and developing tourism facilities.",
+    "f18": "Promoting friendship between nations.",
+    "f19": "Consumer protection.",
+    "f20": "Human rights.",
+    "f21": "Reclamation of desert lands.",
+    "apply": {
+      "title": "Submit Application",
+      "t1": "Volunteer Name",
+      "t2": "Email",
+      "t3": "Phone Number",
+      "f4": "Educational Qualification",
+      "f5": "Current Job",
+      "f6": "Governorate",
+      "f7": "City",
+      "f8": "Postal Code",
+      "f9": "Any specific volunteer work that interests you?",
+      "f10": "Do you have a preference for a specific type of work?",
+      "f11": "Working with a single beneficiary",
+      "f12": "No preference",
+      "f13": "Providing service to multiple beneficiaries",
+      "f14": "Working directly with an employee as an assistant",
+      "f15": "Public speaking",
+      "f16": "Assisting in general administrative duties",
+      "f17": "Editing a newspaper or newsletter",
+      "f18": "Other",
+      "f19": "Is there a beneficiary (client) or group of beneficiaries you prefer to work with?",
+      "f20": "Adults",
+      "f21": "Elderly",
+      "f22": "Teenagers",
+      "f23": "Children",
+      "f24": "People with disabilities",
+      "f25": "Males",
+      "f26": "Females",
+      "f27": "No preference",
+      "f28": "Others",
+      "f29": "I do not wish to work with beneficiaries",
+      "k1": "Is there a group you do not feel inclined to work with?",
+      "k2": "No",
+      "k3": "Yes",
+      "k4": "What are your preferred times for volunteer work?",
+      "k5": "Flexible",
+      "k6": "Prefer weekdays",
+      "k7": "Prefer weekends",
+      "k8": "Prefer daytime work",
+      "k9": "Prefer evening work",
+      "k10": "Other",
+      "k11": "There are times I cannot work during the week",
+      "k12": "Do you have a geographical preference for volunteering?",
+      "k13": "Sometimes",
+      "k14": "Do you have a car available for volunteer work?",
+      "k15": "How did you hear about us?",
+      "k16": "Friend's recommendation",
+      "k17": "Volunteer newsletter",
+      "k18": "A volunteer",
+      "k19": "Advertisements",
+      "k20": "A beneficiary of the organization",
+      "k21": "Names of two people who know you",
+      "k22": "Name",
+      "k23": "Submit"
+    }
   }
+  ,
+  "jobs":{
+    "title":"Jobs"
+  },
+  "news":{
+    "title":"News"
+  },
+  "magazine":{
+    "title":"Magazine"
+  }
+
 
 
 }

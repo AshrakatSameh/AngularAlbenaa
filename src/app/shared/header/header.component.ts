@@ -147,6 +147,19 @@ export class HeaderComponent implements OnInit{
     this.scrollToElement(hash);
   }
 
+  isDropdownOpen = false;
+  subDropdowns: { [key: string]: boolean } = { media: false, membership: false };
+
+  toggleDropdown2(event: Event) {
+    event.preventDefault();
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  toggleSubDropdown(event: Event, key: string) {
+    event.preventDefault();
+    this.subDropdowns[key] = !this.subDropdowns[key];
+  }
+
   
   
 
