@@ -803,7 +803,26 @@
   },
   "magazine":{
     "title":"Magazine"
-  }
+  },
+  "footer": {
+    "title": "Phone",
+    "title2": "Email",
+    "title3": "Useful Links",
+    "title4": "Our Services",
+    "title5": "Our Location",
+    "p1": "Ministry of Labor",
+    "p2": "National Institute for Quality",
+    "p3": "Ministry of Communications",
+    "p4": "Ministry of Social Solidarity",
+    "p5": "Real Estate Development & Investment",
+    "p6": "Vocational Training",
+    "p7": "Courses",
+    "p8": "Jobs",
+    "p9": "Magazine",
+    "p10": "Latest News",
+    "p11": "All rights reserved to Al-Binaa International Company S.A.E."
+}
+
 
 
 

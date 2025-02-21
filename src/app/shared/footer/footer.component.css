@@ -1,0 +1,14 @@
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 5%;
+  }
+  
