@@ -58,8 +58,8 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 
 
 const routes: Routes = [
-  { path: '', component: MainComponent },
-  {path:'home',component:MainComponent},
+
+  //{path:'home',component:MainComponent},
   {path:'contact',component:ContactComponent},
   {path:'jobs',component:JobsComponent},
   {path:'registration',component:RegistrationComponent},
@@ -111,7 +111,9 @@ const routes: Routes = [
   {path:'certificates',component:CertificatesComponent},
   {path: 'dashboard', component: DashBoardComponent, canActivate: [authGuard]},
   // {path: 'dashboard', component: DashBoardComponent, canActivate: [authGuard]},
-  {path:'**',component:MainComponent}
+  { path: 'home', component: MainComponent }, // Define the /home route
+  { path: '', redirectTo: '/home', pathMatch: 'full' }, // Redirect empty path to /home
+  { path: '**', redirectTo: '/home' }
   
 
 ];

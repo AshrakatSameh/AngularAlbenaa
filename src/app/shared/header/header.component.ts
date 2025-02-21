@@ -60,7 +60,7 @@ export class HeaderComponent implements OnInit{
   isAdmin(): boolean {
     const tokenPayload = this.authService.decodedToken();
     const role = tokenPayload.role
-    console.log('User role:', role); // Debugging: Check the role fetched
+   // console.log('User role:', role); // Debugging: Check the role fetched
   
     // Convert both to lowercase for a case-insensitive comparison
     return role?.toLowerCase() === 'admin';
