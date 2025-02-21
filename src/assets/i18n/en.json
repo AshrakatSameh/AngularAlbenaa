@@ -333,8 +333,8 @@
         "p9": "Implementation of all mechanical and electrical works",
         "p10": "Sale, rental and calibration of all surveying devices (GPS_Total_Level- Drones) All works include technical office works."
       },
-      "subtitle8": "الخدمات الإنشائية",
-      "subtitle9": "التصميمات الهندسية"
+      "subtitle8": "Construction Services",
+      "subtitle9": "Engineering designs"
     }
   },
 
@@ -803,6 +803,46 @@
   },
   "magazine":{
     "title":"Magazine"
+  },
+  "Construction Services":{
+    "General Contracting":"General Contracting",
+    "description_1":"Structural engineering is driven primarily by the creative manipulation of materials, forms, and basic mathematical and scientific ideas to achieve a purpose that meets its functional requirements and is structurally safe when subjected to all reasonably foreseeable loads. This is in striking contrast to architectural design, which is driven by the creative manipulation of materials, forms, mass, space, volume, texture, and light to achieve an aesthetic, functional, and often artistic purpose.",
+    "description_2":"The architect is usually the lead designer in buildings, with a structural engineer as a subconsultant. The degree to which each discipline leads the design depends largely on the type of structure. Many simple structures are structurally architect-led, such as multi-story office buildings and housing estates, while other structures, such as tensile structures, shell structures, and lattices, rely heavily on their form for strength, and structural engineering may have a greater influence on form, and thus aesthetics, than architecture.",
+    "description_3":"The structural design of a building must ensure that the building is able to stand safely and is capable of functioning without excessive deflections or movements that would fatigue or crack structural members, cause failure of fixtures, connections, barriers, or affect the comfort of the facility’s occupants. The calculation must account for movements and forces resulting from temperature, cracking, and assumed loads. It must also ensure that the design is practicable within the acceptable tolerances of the materials. It must also allow for the engineering to operate, and the building services to fit within the building and function (air conditioning, ventilation, smoke extraction, electrical, lighting, etc.). The structural design of a modern building can be very complex, often requiring a large team to complete.",
+    "Technical Office Works":"Technical Office Works:",
+    "description2":"In Al-Binaa General Contracting, Surveying and Training Establishment, we rely on highly experienced technical cadres, each in his specialty, to serve each department of the establishment. The office performs architectural designs for all residential projects, architectural designs for commercial projects, construction designs, urban planning designs and supervision of implementation. The establishment has a very good record, thanks to God, in architectural designs for projects with individuals, offices and companies in Egypt and the Kingdom of Saudi Arabia.",
+    "Design works":"Design works",
+    "description3":"It is the process of formation and innovation, i.e. collecting elements from the environment and placing them in a specific formation to give something a function or meaning. Some differentiate between formation and design, saying that formation is part of the design process because human thought and personal experiences intervene in design.",
+    "Architectural design":"Architectural design",
+    "description4":"Architectural design is an organized mental process by which we can deal with multiple types of information and integrate them into one set of ideas and end up with a clear vision of those ideas. This vision usually appears in the form of drawings or a timeline and the design includes the method and the product at the same time.",
+    "Interior design":"Interior design",
+    "description5":"It is preparing the place to perform functions with the least effort, and this includes floors, walls, ceilings and equipment. It is also known as (the art of treating the void or area and all its dimensions in a way that exploits all the design elements in an aesthetic manner that helps work inside the building). - It is planning and innovation based on specific architectural data and bringing this planning into existence and then implementing it in all places and spaces, whatever their purposes of use and character, using different materials and appropriate colors at the appropriate cost.",
+    "Types of designs":"Types of designs",
+    "description6":{
+      "p1":"Architectural designs",
+      "p2":"Structural designs",
+      "p3":"Mechanical designs",
+      "p4":"Electrical designs",
+      "p5":"Civil works designs (roads - water and drainage networks)",
+      "description":"The design is done according to the various international specifications and codes such as BS8110 - ACI318 - AASHTO - AISC ASD - AISC LFRD - BS5950 UBC 97 - UBC LFRD - Egyptian Codes and using the latest computer programs used in design"
+    },
+    "Architectural design2":"Architectural design",
+    "description7":"The institution carries out all architectural design and planning works with a group of engineers specialized in the fields of architecture, electricity and mechanics, to produce an architecturally integrated project ready for easy implementation and in a way that meets the desires of project owners, the requirements of the city authority, civil defense, the electricity company and relevant government agencies. The architectural design works cover all types of buildings, including residential, hotel, specialized, commercial and industrial, whether they are low-story, multi-story or tower-like.",
+    "Structural design and analysis":"Structural design and analysis",
+    "description8":"The office carries out all structural design and analysis work by engineers in the fields of structural design and analysis. The structural work covers all the static or dynamic loads that facilities are exposed to, as well as earthquakes and winds. The structural design work covers all types of buildings, including residential, hotel, specialized, commercial and industrial, whether they are low-story, multi-story or tower-like.",
+    "description8_2":"Structural analysis works cover all works to verify the safety of construction works according to the requirements of codes and material resistance, the suitability of construction materials, the extent of their deterioration and repairability with the aim of reducing the financial burdens on the clients of Al-Tanbouli Office and preserving their financial investments in projects.",
+    "Project preparation and technical office":"Project preparation and technical office",
+    "description9":{
+      "p1":"Preparing design drawings",
+      "p2":"Preparing executive drawings Shop Drawings",
+      "p3":"Redesigning projects",
+      "p4":"Raising the efficiency of facades and architectural plans",
+      "p5":"Preparing timetables",
+      "p6":"Preparing specifications and conditions booklet",
+      "p7":"Preparing measurements",
+      "p8":"Inventory and evaluation works"
+    }
+
   },
   "footer": {
     "title": "Phone",
