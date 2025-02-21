@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-site-engineer',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./site-engineer.component.css']
 })
 export class SiteEngineerComponent {
+  constructor(public directionService: DirectionService){}
 
 }

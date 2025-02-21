@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 import { environment } from 'src/environments/environment.development';
 
 @Component({
@@ -10,7 +11,7 @@ import { environment } from 'src/environments/environment.development';
 export class ProblemsComponent {
   formData: any = {}; // Object to hold form data
   api = environment.apiUrl;
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient ,public directionService: DirectionService) {}
 
   submitForm(): void {
     // Send form data to API

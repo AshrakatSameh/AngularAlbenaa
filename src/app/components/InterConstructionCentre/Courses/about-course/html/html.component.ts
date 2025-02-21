@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-html',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./html.component.css']
 })
 export class HtmlComponent {
+  constructor(public directionService: DirectionService){}
+
 
 }

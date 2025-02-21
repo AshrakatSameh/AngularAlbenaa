@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { EnquiryCourseService } from 'src/app/services/enquiry-course.service';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-enquiry',
@@ -22,7 +23,7 @@ export class EnquiryComponent implements OnInit{
     });
   }
   
-  constructor( private fb: FormBuilder , private cousreAskInfoService : EnquiryCourseService){}
+  constructor( private fb: FormBuilder , private cousreAskInfoService : EnquiryCourseService ,public directionService: DirectionService){}
 
   onSubmitCourseApplicant() {
     if (this.myCourseApplicantForm.valid) {

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MembershipService } from 'src/app/services/membership.service';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-apply-mem',
@@ -28,7 +29,7 @@ export class ApplyMemComponent implements OnInit {
     });
   }
 
-  constructor( private fb: FormBuilder , private membershipService :MembershipService){}
+  constructor( private fb: FormBuilder , private membershipService :MembershipService,public directionService: DirectionService){}
 
   onSubmitMembershipApplicant() {
     if (this.myMembershipApplicantForm.valid) {

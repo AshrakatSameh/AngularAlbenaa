@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-autocad',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./autocad.component.css']
 })
 export class AutocadComponent {
+
+  constructor(public directionService: DirectionService){}
+
 
 }

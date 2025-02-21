@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-graphic',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./graphic.component.css']
 })
 export class GraphicComponent {
+
+  constructor(public directionService: DirectionService){}
 
 }

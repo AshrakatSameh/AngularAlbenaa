@@ -7,6 +7,7 @@
           (ngSubmit)="onSubmitMembershipApplicant()"
             class="php-email-form"
             id="scrolled_form"
+            [ngClass]="directionService.getDirection()"
           >
             <h3> {{'membership.title' |translate}}</h3>
             <div class="row gy-3">
@@ -120,7 +121,7 @@
                 <select class="form-select" aria-label="Default select example" formControlName="memberType"
                 >
                   <option selected disabled>
-                    {{'membership.subtitle3' |translate}} ؟
+                    {{'membership.subtitle3' |translate}} 
                   </option>
                   <option value="ماسيه">{{'membership.f12' |translate}}</option>
                   <option value="ذهبي">{{'membership.f13' |translate}}</option>
@@ -131,7 +132,7 @@
               <div class="col-md-12">
                 <select class="form-select" aria-label="Default select example" formControlName="memberSystem">
                   <option selected disabled>
-                    {{'membership.subtitle4' |translate}}  ؟
+                    {{'membership.subtitle4' |translate}} 
                   </option>
                   <option value="نصف سنويه"> {{'membership.f15' |translate}}</option>
                   <option value="سنويه">{{'membership.f16' |translate}}</option>
@@ -145,7 +146,7 @@
               <div class="col-md-12">
                 <select class="form-select" aria-label="Default select example" formControlName="memberCategory">
                   <option selected disabled>
-                    {{'membership.subtitle5' |translate}} ؟
+                    {{'membership.subtitle5' |translate}} 
                   </option>
                   <option value="فردي">{{'membership.f19' |translate}}</option>
                   <option value="عائلي"> {{'membership.f20' |translate}}</option>

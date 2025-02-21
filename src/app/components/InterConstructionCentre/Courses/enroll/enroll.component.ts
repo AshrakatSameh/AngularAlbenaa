@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CourseApplicantService } from 'src/app/services/course-applicant.service';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-enroll',
@@ -21,7 +22,8 @@ export class EnrollComponent implements OnInit {
     });
   }
 
-  constructor(private courseApplicantService : CourseApplicantService , private fb: FormBuilder,
+
+  constructor(private courseApplicantService : CourseApplicantService , private fb: FormBuilder,public directionService: DirectionService
 
   ){}
 

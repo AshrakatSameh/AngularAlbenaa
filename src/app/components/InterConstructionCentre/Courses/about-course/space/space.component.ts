@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-space',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./space.component.css']
 })
 export class SpaceComponent {
+  constructor(public directionService: DirectionService){}
+
 
 }

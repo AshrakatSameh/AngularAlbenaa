@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-gis',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./gis.component.css']
 })
 export class GISComponent {
+
+  constructor(public directionService: DirectionService){}
+
 
 }
