@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-maps',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./maps.component.css']
 })
 export class MapsComponent {
+  constructor(public directionService: DirectionService){}
+
 
 }

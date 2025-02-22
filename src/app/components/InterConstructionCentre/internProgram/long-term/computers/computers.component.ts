@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-computers',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./computers.component.css']
 })
 export class ComputersComponent {
+  constructor(public directionService: DirectionService){}
+
 
 }

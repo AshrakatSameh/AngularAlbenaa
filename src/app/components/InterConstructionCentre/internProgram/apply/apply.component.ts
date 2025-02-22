@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { TrainingApplicantService } from 'src/app/services/training-applicant.service';
 import { TrainingsService } from 'src/app/services/trainings.service';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-apply',
@@ -21,7 +22,7 @@ export class ApplyTrainingComponent implements OnInit {
     });
   }
 
-  constructor( private fb: FormBuilder, private trainingApplicantService:TrainingApplicantService){}
+  constructor( private fb: FormBuilder, private trainingApplicantService:TrainingApplicantService , public directionService: DirectionService){}
 
   onSubmitCourseApplicant() {
     if (this.myCourseApplicantForm.valid) {

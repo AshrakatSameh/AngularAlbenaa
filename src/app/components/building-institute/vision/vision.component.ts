@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-vision',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./vision.component.css']
 })
 export class VisionComponent {
+  constructor(public directionService: DirectionService){}
 
 }

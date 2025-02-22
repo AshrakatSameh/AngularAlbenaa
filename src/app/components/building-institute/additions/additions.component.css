@@ -26,3 +26,14 @@ h3{
   .vision .content p:last-child {
     margin-bottom: 0;
   }
+
+  .rtl-direction {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .ltr-direction {
+    direction: ltr;
+    text-align: left;
+  }
+  
