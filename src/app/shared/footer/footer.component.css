@@ -1,9 +1,11 @@
-.logos {
+/* .logos {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15%;
     flex-wrap: wrap;
+    transition: transform 0.5s ease-in-out;
+
   }
   
   .logo {
@@ -11,4 +13,29 @@
     height: 150px;
     margin-bottom: 5%;
   }
+   */
+
+   .logos-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+  }
+
+  .logos {
+    display: flex;
+    gap: 20px; /* Adjust spacing between logos */
+    animation: scroll 10s linear infinite;
+    width: 200%;  }
   
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 15px; /* Optional spacing between logos */
+
+  }
+  
+ @keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves by half since we duplicated the logos */
+}
