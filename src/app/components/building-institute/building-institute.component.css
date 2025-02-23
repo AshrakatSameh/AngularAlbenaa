@@ -39,6 +39,7 @@
   .vision .content ul i {
     font-size: 1rem;
     margin-left: 6px;
+    margin-right: 6px;
     color: #5c9f24;
     
   }
@@ -47,3 +48,14 @@
   .vision .content p:last-child {
     margin-bottom: 0;
   }
+
+  .rtl-direction {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .ltr-direction {
+    direction: ltr;
+    text-align: left;
+  }
+  

@@ -152,3 +152,14 @@
     direction: rtl;
     text-align: right;
   }
+
+  .rtl-direction {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .ltr-direction {
+    direction: ltr;
+    text-align: left;
+  }
+  

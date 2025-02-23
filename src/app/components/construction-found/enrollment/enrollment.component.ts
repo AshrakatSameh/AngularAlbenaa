@@ -5,6 +5,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NgToastService } from 'ng-angular-popup';
 import { ApiServiceService } from 'src/app/services/api-service.service';
 import { EnrollAlbnaaService } from 'src/app/services/enroll-albnaa.service';
+import { DirectionService } from 'src/app/shared/direction.service';
 import { environment } from 'src/environments/environment.development';
 
 @Component({
@@ -132,7 +133,7 @@ export class EnrollmentComponent implements OnInit {
     });
   }
 
-  constructor( private fb: FormBuilder , private enrollmentService :EnrollAlbnaaService){}
+  constructor( private fb: FormBuilder , private enrollmentService :EnrollAlbnaaService, public directionService: DirectionService){}
 
 
   onSubmitEnroll() {

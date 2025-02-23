@@ -5,7 +5,7 @@
       <h2 class="">{{'Albenaa company.page1.title' | translate}}<br></h2>
     </div>
 
-    <div class="container">
+    <div class="container" [ngClass]="directionService.getDirection()">
 
       <div class="row gy-4">
 
@@ -49,7 +49,7 @@
               <img src="assets/img/about.jpg" class="img-fluid" alt="">
             </div>
     
-            <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200" [ngClass]="directionService.getDirection()">
               <h3 class="text-decoration-underline">{{'Albenaa company.page1.title1' | translate}}</h3>
            
               <ul>
@@ -141,7 +141,7 @@
     
           </div>
 
-          <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="col-md-6 col-sm-6 col-xs-12" [ngClass]="directionService.getDirection()">
             <article class="recent-post-item">
               <div class="bi bi-buildings">
               </div>
@@ -156,7 +156,7 @@
             </article>
         </div>
 
-        <div class="col-md-6 col-sm-6 col-xs-12">
+        <div class="col-md-6 col-sm-6 col-xs-12" [ngClass]="directionService.getDirection()">
             <article class="recent-post-item">
               <div class="bi bi-buildings">
               </div>

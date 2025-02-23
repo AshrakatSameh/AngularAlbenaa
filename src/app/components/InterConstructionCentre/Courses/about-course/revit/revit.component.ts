@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DirectionService } from 'src/app/shared/direction.service';
 
 @Component({
   selector: 'app-revit',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./revit.component.css']
 })
 export class RevitComponent {
+  constructor(public directionService: DirectionService){}
+
 
 }

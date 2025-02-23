@@ -39,4 +39,13 @@
     .address{
       padding-right: 30px;
     }
+    .rtl-direction {
+      direction: rtl;
+      text-align: right;
+    }
+    
+    .ltr-direction {
+      direction: ltr;
+      text-align: left;
+    }
     

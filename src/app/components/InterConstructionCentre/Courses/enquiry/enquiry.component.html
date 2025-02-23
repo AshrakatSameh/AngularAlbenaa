@@ -8,6 +8,7 @@
           (ngSubmit)="onSubmitCourseApplicant()"
             class="php-email-form"
             id="scrolled_form"
+            [ngClass]="directionService.getDirection()"
           >
             <h3> {{'aboutCourses.enquiry.title' |translate}}</h3>
             <div class="row gy-3">
