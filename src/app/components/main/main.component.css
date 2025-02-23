@@ -243,3 +243,28 @@ ul li{
 ul{
   padding-left: 0rem;
 }
+
+.logos-wrapper {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  width: 200%; /* Ensures continuous scrolling */
+  animation: scroll 10s linear infinite;
+}
+
+.logo {
+  width: 180px;
+    height: 180px;
+    margin: 0 15px; 
+}
+
+/* Fix for smooth infinite scrolling */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Moves by half so that duplicated logos replace the first set */
+}

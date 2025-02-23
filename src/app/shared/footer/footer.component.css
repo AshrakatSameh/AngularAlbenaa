@@ -1,4 +1,4 @@
-/* .logos {
+.logos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,10 +12,14 @@
     width: 150px;
     height: 150px;
     margin-bottom: 5%;
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #5c9f24; /* Circle border with your preferred color */
+    object-fit: cover; /* Ensures the image fits well inside the circle */
+    padding: 10px;
   }
-   */
+  
 
-   .logos-wrapper {
+   /* .logos-wrapper {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
@@ -24,18 +28,18 @@
 
   .logos {
     display: flex;
-    gap: 20px; /* Adjust spacing between logos */
-    animation: scroll 10s linear infinite;
+    gap: 20px;
+
     width: 200%;  }
   
   .logo {
     width: 150px;
     height: 150px;
-    margin: 0 15px; /* Optional spacing between logos */
+    margin: 0 15px; 
 
   }
   
  @keyframes scroll {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); } /* Moves by half since we duplicated the logos */
-}
+  100% { transform: translateX(-50%); } 
+} */
