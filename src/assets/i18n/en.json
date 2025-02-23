@@ -142,6 +142,10 @@
     "title": "Professional Training",
     "description": "Don't let your grades stop you from reaching your dream job! If you love journalism and media 🎥🎤 and dream of becoming a journalist or presenter, then your place is with us in the professional training program in journalism and media at the International Building Center. The opportunity is open to all high school, Al-Azhar, and diploma graduates, as well as institute and university students, without restrictions on the year of graduation! 👨‍🎓👩‍🎓",
     "Training Information": {
+      "Training Information":"Training Informations",
+      "Training application":"Training application",
+      "Complaints and suggestions":"Complaints and suggestions",
+      "results":"Results",
       "title1": "Journalism and Media",
       "Journalism and Media": {
         "mainTitle": "Journalism and Media Section",
@@ -861,8 +865,32 @@
     "p9": "Magazine",
     "p10": "Latest News",
     "p11": "All rights reserved to Al-Binaa International Company S.A.E."
+},
+"Albenaa Inrenational":"Albenaa International",
+"ccm":"E.C.C",
+"vision":"Vision",
+"Albenaa Company Vision":"Albenaa Company Vision",
+"vision_description1":"International Construction for Construction, General Contracting and Surveying Works Egyptian Federation of Construction and Building Contractors (77277)",
+"vision_description2":"The beginning of the contracting activity was adopting the state's approach in its national projects such as the (Haya kareema) project",
+"vision_description3":"This is what was implemented within the framework of this project:",
+"data":{
+  "p1":"Project to improve the efficiency of Al-Ghabaishah Primary School - Sidi Salem, Kafr El-Sheikh",
+  "p2":"Project to raise the efficiency of Al-Aqoula Primary School - Sidi Salem, Kafr El-Sheikh",
+  "p3":"Project to line and rehabilitate the Diab Canal, 12 km long - Irrigation Engineering, East Dayrout",
+  "p4":"Project to line and rehabilitate the Farag Canal, 1570 meters long - Irrigation Engineering, East Dayrout From various previous works, we present the following",
+  "points":{
+    "p1":"Project to establish a mosque / Al-Zubayr bin Al-Awam - Al-Shalalat area in Alexandria.",
+    "p2":"Residential compound project - implementation of excavation, backfilling and surveying works in the New Alamein City.",
+    "p3":"Cultural, scientific and religious services.",
+    "p4":"Landscape works project for the coastal road island in the New Alamein City"
+  }
 }
-
+,"certificates":"Certificates",
+"newsLine":"Believing in what our ancestors did and in the path our fathers followed, we, the sons, have taken upon ourselves the path of our ancestors and fathers together. Without you, we would not be here. That is why we are here to change the world together; one of the sons"
+,"albenaa center":"Albenaa Center",
+"img_line1":"Believing in what our ancestors did and in the path our fathers followed",
+"img_line2":"We, the sons, have taken upon ourselves the journey of our grandfathers and fathers together.",
+"img_line3":"Without you we wouldn't be here. That's why we are here to change the world together; one of the sons"
 
 
 

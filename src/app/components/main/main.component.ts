@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import * as Isotope from 'isotope-layout';
 
 
@@ -9,9 +10,16 @@ import * as Isotope from 'isotope-layout';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent implements OnInit {
-  
+  lang: string = 'en';
     private isotope: Isotope | null = null;
+constructor(private translate:TranslateService){
+  this.lang = this.translate.currentLang || 'en';
 
+  // Listen for language changes
+  this.translate.onLangChange.subscribe(event => {
+    this.lang = event.lang;
+  });
+}
     ngOnInit(): void {
       // Initialize Isotope for a portfolio container
       const portfolioContainer = document.querySelector('.portfolio-container') as HTMLElement;
