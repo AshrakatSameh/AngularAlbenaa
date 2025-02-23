@@ -231,3 +231,12 @@
     width: 5%;
   }
 }
+
+.no-opacity img {
+  opacity: 1 !important;
+}
+
+
+
+
+
