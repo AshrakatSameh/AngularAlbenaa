@@ -21,6 +21,8 @@ constructor(private translate:TranslateService){
   });
 }
     ngOnInit(): void {
+      this.startAutoScroll();
+      
       // Initialize Isotope for a portfolio container
       const portfolioContainer = document.querySelector('.portfolio-container') as HTMLElement;
       if (portfolioContainer) {
@@ -30,5 +32,16 @@ constructor(private translate:TranslateService){
           });
       }
     }
+
+      // ngOnInit() {
+  //   this.startAutoScroll();
+  // }
+
+  startAutoScroll() {
+    const logos = document.querySelector('.logos') as HTMLElement;
+    setInterval(() => {
+      logos.appendChild(logos.firstElementChild as Node); // Moves first logo to end
+    }, 1000); // Adjust time (2000ms = 2s)
+  }
 
 }
