@@ -109,13 +109,13 @@
     flex-direction: column;
     justify-content: center; /* Centers text vertically */
     align-items: center; /* Centers text horizontally */
-    bottom: 50%; /* Adjust the position vertically */
+    bottom: 40%; /* Adjust the position vertically */
     transform: translateY(50%); /* Center text vertically */
 }
 
 /* Optional: Customize the font size and other properties */
 .carousel-caption h5 {
-    font-size: 2rem; /* Adjust as needed */
+    font-size: 25px;
     margin-bottom: 0; /* Remove bottom margin for tighter spacing */
 }
 

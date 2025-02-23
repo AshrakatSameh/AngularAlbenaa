@@ -1,3 +1,10 @@
+#header {
+  z-index: 1100; /* Navbar must be higher than the news ticker */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 .my-btn:hover{
     background-color: #5c9f24;
     
@@ -25,7 +32,7 @@
   
   .navbar>ul>li {
     white-space: nowrap;
-    padding: 10px 0 10px 22px;
+    padding: 10px 0 10px 9px;
   }
   
   .navbar a,
@@ -104,16 +111,17 @@
     display: block;
     position: absolute;
     left: 22px;
-    top: calc(100% + 30px);
+    top: calc(100% + 5px); /* Adjust this if needed */
     margin: 0;
     padding: 10px 0;
-    z-index: 99;
+    z-index: 1200; /* Ensure it's above the news ticker */
     opacity: 0;
     visibility: hidden;
     background: #fff;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
-  }
+}
+
   
   .navbar .dropdown ul li {
     min-width: 200px;
@@ -326,7 +334,7 @@
     position: absolute;
     right: 0;
     background-color: white;
-    min-width: 160px;
+    min-width: 110px;
     box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -351,3 +359,48 @@
   .dropdown-toggle::after {
     display: none !important;
   }
+
+  .news-ticker {
+    width: 100%;
+    background: rgba(89, 150, 40, 0.7);
+    color: #000;
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 18px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    z-index: 999;
+    overflow: hidden; /* Ensures the text does not overflow outside the ticker */
+    white-space: nowrap; /* Keeps text in a single line */
+}
+
+.news-ticker p {
+  display: inline-block;
+  white-space: nowrap; /* Prevents text from breaking into multiple lines */
+  padding-left: 100%; /* Starts text from outside the viewport */
+  animation: scrollText 30s linear infinite; /* Increase duration to slow down */
+}
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+  
+
+  .container{
+    max-width: 95%;
+    margin: 0;
+  }
+  .sub-text {
+    display: block;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+  }
+  
